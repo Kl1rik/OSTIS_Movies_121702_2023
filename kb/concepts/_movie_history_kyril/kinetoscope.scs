@@ -1,0 +1,47 @@
+concept_kinetoscope
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[кинетоскоп ]
+(* <- lang_ru;; *);
+[kinetoscope]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (ка́мера-обску́ра)](*<-lang_ru;;*);
+		[Pic. (Camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/kinetoscope.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (кинетоскоп)]
+(* <- lang_ru;; *);
+[Def. (kinetoscope)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[  кинетоскоп - это устройство для просмотра фильмов, которое позволяло смотреть короткие отрывки из фильмов на индивидуальной основе, используя вращающийся барабан с небольшими отверстиями.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ A kinetoscope is a device for viewing movies that allowed individuals to watch short clips from films on an individual basis, using a rotating drum with small apertures.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_kinetoscope
+};;
+*);
+<= nrel_inclusion: concept_silent_cinema;;

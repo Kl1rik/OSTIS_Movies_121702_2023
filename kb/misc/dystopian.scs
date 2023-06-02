@@ -1,0 +1,35 @@
+concept_dystopian
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Дистопия]
+(* <- lang_ru;; *);
+[Dystopia]
+(* <- lang_en;; *);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (Дистопия)]
+(* <- lang_ru;; *);
+[Def. (Dystopia)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Дистопия - жанр литературы, кино и других видов искусства, описывающий будущее общество, которое характеризуется отрицательными аспектами, такими как политическая репрессия, насилие, бедность и т. д.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Dystopia - a genre of literature, film, and other forms of art that describes a future society characterized by negative aspects such as political repression, violence, poverty, etc.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_dystopian
+};;
+*);
+<= nrel_inclusion: concept_humanities;; 

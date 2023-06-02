@@ -1,0 +1,47 @@
+concept_andre_bazin
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Андре Базен]
+(* <- lang_ru;; *);
+[André Bazin]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Полин Кейл)](*<-lang_ru;;*);
+		[Pic. (Pauline Kael)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...     
+	(*
+		->"file://IMG/andre.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Андре Базен)]
+(* <- lang_ru;; *);
+[Def. (André Bazin)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Андре Базен : Французский кинокритик и теоретик, сооснователь влиятельного журнала Cahiers du Cinéma. Письма Базена сыграли значительную роль в формировании кинокритики и теории, подчеркивая реализм и важность видения режиссера. Он считается одним из пионеров теории автора.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[André Bazin : French film critic and theorist, co-founder of the influential film magazine Cahiers du Cinéma. Bazin's writings played a significant role in shaping film criticism and theory, emphasizing realism and the importance of the director's vision. He is considered one of the pioneers of auteur theory.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_andre_bazin
+};;
+*);
+<= nrel_inclusion: concept_professional_movie_criticism;;

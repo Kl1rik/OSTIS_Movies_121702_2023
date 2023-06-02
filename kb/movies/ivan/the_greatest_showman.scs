@@ -1,0 +1,49 @@
+the_greatest_showman<- concept_biography;
+=> nrel_main_idtf:
+   [The Greatest Showman]
+   (* <- lang_en;; <- name_en;;*);
+   [Величайший шоумен]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Финеас Тейлор Барнум всегда мечтал войти в историю, но все его занятия не приносили ему удовольствия. И когда, казалось, весь мир обернулся против него, он решает пойти вслед за своей мечтой. Барнум создает завораживающее представление-сенсацию, которое стало рождением мирового шоу-бизнеса.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Celebrates the birth of show business and tells of a visionary who rose from nothing to create a spectacle that became a worldwide sensation.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [07.05.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [07.05.2018](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

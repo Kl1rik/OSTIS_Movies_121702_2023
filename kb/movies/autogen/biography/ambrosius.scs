@@ -1,0 +1,26 @@
+ambrosius <- concept_biography;
+
+=> nrel_main_idtf:
+	[ambrosius](*<-lang_en;;<-name_en;;*);
+	[ambrosius](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT0H8M](*<-lang_ru;;*);
+       [PT0H8M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1910](*<-lang_ru;;*);
+       [1910](*<-lang_en;;*);;
+*);;

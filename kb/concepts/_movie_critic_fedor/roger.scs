@@ -1,0 +1,47 @@
+concept_roger_ebert
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Роджер Иберт]
+(* <- lang_ru;; *);
+[Roger Ebert]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Роджер Иберт)](*<-lang_ru;;*);
+		[Pic. (Roger Ebert)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...     
+	(*
+		->"file://IMG/roger.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Роджер Иберт)]
+(* <- lang_ru;; *);
+[Def. (Roger Ebert)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Роджер Иберт : Выдающийся американский кинокритик и журналист, известный своей работой в качестве кинокритика газеты Chicago Sun-Times. Иберт был первым кинокритиком, который получил Пулитцеровскую премию, и стал широко признанным благодаря своей телевизионной программе "Сискел и Эберт", где он и другой критик Джин Сискел обсуждали и обзоры фильмов.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Roger Ebert : Renowned American film critic and journalist, known for his work as the film critic for the Chicago Sun-Times. Ebert was the first film critic to win a Pulitzer Prize and became widely recognized for his television show "Siskel & Ebert," where he and fellow critic Gene Siskel reviewed and discussed movies.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_roger_ebert
+};;
+*);
+<= nrel_inclusion: concept_professional_movie_criticism;;

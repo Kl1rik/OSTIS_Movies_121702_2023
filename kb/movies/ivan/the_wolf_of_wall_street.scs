@@ -1,0 +1,49 @@
+the_wolf_of_wall_street<- concept_biography;
+=> nrel_main_idtf:
+   [The Wolf of Wall Street]
+   (* <- lang_en;; <- name_en;;*);
+   [Волк с Уолл-стрит]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Восхождение циника-гедониста на бизнес-олимп 1980-х. Блистательный тандем Леонардо ДиКаприо и Мартина Скорсезе]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT3H](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT3H](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.12.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.12.2013](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

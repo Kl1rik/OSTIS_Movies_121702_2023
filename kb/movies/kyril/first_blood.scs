@@ -1,0 +1,50 @@
+first_blood<- concept_thriller;
+=> nrel_main_idtf:
+   [First Blood]
+   (* <- lang_en;; <- name_en;;*);
+   [Рэмбо Первая кровь]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Рембо: Первая кровь - это фильм 1982 года, где главную роль играет Сильвестр Сталлоне, в роли бывшего зеленого берета и ветерана войны во Вьетнаме, который доходит до предела после того, как с ним  плохо обращаются полицеские маленького городского полицейского отдела.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[First Blood is a 1982 action movie starring Sylvester Stallone as John Rambo, a former Green Beret and Vietnam War veteran who is pushed to his limits by the mistreatment he receives from a small town police force. The film was directed by Ted Kotcheff and also stars Richard Crenna, Brian Dennehy, and David Caruso.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H38M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H38M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.04.1982](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.04.1982](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

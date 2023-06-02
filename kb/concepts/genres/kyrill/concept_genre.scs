@@ -1,0 +1,17 @@
+concept_genre<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[киножанр](* <- lang_ru;; *);
+	[cinematic genre](* <- lang_en;; *);
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (Киножанр)](* <- lang_ru;; *);
+		[Def. (Cinematic genre)](* <- lang_en;; *);;
+	<=nrel_sc_text_translation:...(*
+		->[Киножанр - условное определение группы кинофильмов,имеющих схожие черты]
+		(* <- lang_ru;; *);;
+		->[Cinematic genre - a conditional definition of a group of films that have similar features]
+		(* <- lang_en;; *);;
+	*);;
+*);;

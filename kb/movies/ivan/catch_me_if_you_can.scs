@@ -1,0 +1,49 @@
+catch_me_if_you_can<- concept_biography;
+=> nrel_main_idtf:
+   [Catch Me If You Can]
+   (* <- lang_en;; <- name_en;;*);
+   [Поймай меня, если сможешь]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Виртуозный аферист годами водит за нос ФБР. Хит Стивена Спилберга по реальным событиям с Леонардо ДиКаприо]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Barely 21 yet, Frank is a skilled forger who has passed as a doctor, lawyer and pilot. FBI agent Carl becomes obsessed with tracking down the con man, who only revels in the pursuit.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H21M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H21M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.02.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.02.2003](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

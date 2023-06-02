@@ -1,0 +1,26 @@
+mystery_of_the_wax_museum <- concept_thriller;
+
+=> nrel_main_idtf:
+	[the_mystery_of_the_wax_meneum](*<-lang_en;;<-name_en;;*);
+	[vahakabinetin_arvoitus](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H17M](*<-lang_ru;;*);
+       [PT1H17M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1933](*<-lang_ru;;*);
+       [1933](*<-lang_en;;*);;
+*);;

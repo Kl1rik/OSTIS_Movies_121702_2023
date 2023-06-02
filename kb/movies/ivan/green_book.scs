@@ -1,0 +1,49 @@
+green_book<- concept_biography;
+=> nrel_main_idtf:
+   [Green Book]
+   (* <- lang_en;; <- name_en;;*);
+   [Зелёная книга]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Путешествие итальянца-вышибалы и чернокожего пианиста по Америке 1960-х. «Оскар» за лучший фильм]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[A working-class Italian-American bouncer becomes the driver for an African-American classical pianist on a tour of venues through the 1960s American South.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H10M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H10M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.09.2018](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.09.2018](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

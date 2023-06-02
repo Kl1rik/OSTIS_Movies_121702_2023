@@ -1,0 +1,48 @@
+concept_amateur_movie_criticism
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Любительская кинокритика]
+(* <- lang_ru;; *);
+[Amateur movie criticism]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Любительская кинокритика)](*<-lang_ru;;*);
+		[Pic. (Amateur movie criticism)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/amateur.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Любительская кинокритика)]
+(* <- lang_ru;; *);
+[Def. (Amateur movie criticism)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Читательская (любительская) критика – это разнообразная аргументированная реакция на современную художественную словесность, принадлежащая людям, профессионально не связанных с литературной деятельностью. Традиционные жанры – письма писателям, отзывы в интернете, выступления на литературных встречах и др.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Reader's (amateur) criticism is a diverse reasoned reaction to modern fiction, which belongs to people who are not professionally associated with literary activity. Traditional genres are letters to writers, reviews on the Internet, speeches at literary meetings, etc.
+]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_amateur_movie_criticism
+};;
+*);
+<= nrel_inclusion: concept_movie_criticism;;

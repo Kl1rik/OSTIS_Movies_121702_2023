@@ -1,0 +1,50 @@
+concept_technology
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[технология](*<-lang_ru;;*);
+[technology](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (технология)](*<-lang_ru;;*);
+		[pic. (technology)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/technology.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (технология)](*<-lang_ru;;*);
+	[def. (technology)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Техноло́гия — совокупность методов и инструментов для достижения желаемого результата; в широком смысле — применение научного знания для решения практических задач. Технология включает в себя способы работы, её режим, последовательность действий.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		-> rrel_example:
+		[Technology is the application of knowledge for achieving practical goals in a reproducible way. The word technology can also mean the products resulting from such efforts, including both tangible tools such as utensils or machines, and intangible ones such as software. Technology plays a critical role in science, engineering, and everyday life.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_technology
+	};;
+*);
+
+<= nrel_inclusion: concept_cinema_equipment;;

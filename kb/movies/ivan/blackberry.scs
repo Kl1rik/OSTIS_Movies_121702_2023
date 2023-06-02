@@ -1,0 +1,49 @@
+blackberry<- concept_biography;
+=> nrel_main_idtf:
+   [BlackBerry]
+   (* <- lang_en;; <- name_en;;*);
+   [Кто убил BlackBerry]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Группа канадских разработчиков ставит на кон абсолютно всё ради безумной идеи объединить компьютер и телефон в одном устройстве. Так рождается первый в мире смартфон BlackBerry, который в одночасье завоевывает весь рынок и делает своих создателей миллиардерами. Но чтобы удержаться на этой высоте недостаточно быть гениями технологий. Новая реальность и безжалостная конкуренция Кремниевой Долины бросает вызов героям, испытывая их веру в себя и отношения друг с другом.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[The story of the meteoric rise and catastrophic demise of the world's first smartphone.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H59M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H59M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.05.2023](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.05.2023](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

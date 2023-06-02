@@ -1,0 +1,35 @@
+concept_film_score
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Оценка фильма]
+(* <- lang_ru;; *);
+[Film score]
+(* <- lang_en;; *);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (Оценка фильма)]
+(* <- lang_ru;; *);
+[Def. (Film score)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Оценка фильма - это оценка, которую получает фильм от критиков или зрителей, обычно на основе качества и популярности.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Film score is an evaluation that a film receives from critics or audiences, usually based on quality and popularity.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_film_score
+};;
+*);
+<= nrel_inclusion: concept_movie;;

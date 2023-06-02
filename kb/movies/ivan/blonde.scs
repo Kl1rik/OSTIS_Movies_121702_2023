@@ -1,0 +1,49 @@
+blonde<- concept_biography;
+=> nrel_main_idtf:
+   [Blonde]
+   (* <- lang_en;; <- name_en;;*);
+   [Блондинка]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating NC-17]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[В те редкие часы, когда сбрендившая мама не пыталась сжечь или утопить маленькую Норму Джин, она рассказывала дочке, что её отец — голливудская знаменитость и богач, который временно не может принимать участие в их жизни. Маму посадили в сумасшедший дом, Норма Джин выросла, взяла псевдоним Мэрилин Монро, но даже когда стала самой популярной блондинкой Голливуда и секс-символом 1950-х, всё равно продолжала поиски анонимного отца.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[From director Andrew Dominik, and based on the bestselling novel by Joyce Carol Oates, 'Blonde' boldly reimagines the life of one of Hollywood's most enduring icons, Marilyn Monroe. From her volatile childhood as Norma Jeane, through her rise to stardom and romantic entanglements, 'Blonde' blurs the lines of fact and fiction to explore the widening split between her public and private selves.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H47M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [08.09.2022](*<-lang_ru;;*);;
+    => nrel_main_idtf : [08.09.2022](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

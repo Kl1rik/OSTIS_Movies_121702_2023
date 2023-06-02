@@ -1,0 +1,19 @@
+concept_fantasy <- sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[фэнтези](* <- lang_ru;; *);
+	[fantasy](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Фэнтези)](* <- lang_ru;; *);
+		[Def. (Fantasy)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Фэнтези - жанр фантастики, характеризующийся присутствием магических существ и элементов, волшебства и магии.]
+		(* <- lang_ru;; *);;
+		->[Fantasy - a genre of speculative fiction set characterized by the presence of magical creatures and elements, magic and supernatural phenomena.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_genre;;

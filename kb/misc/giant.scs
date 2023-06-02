@@ -1,0 +1,30 @@
+giant<- concept_drama;
+=> nrel_main_idtf:
+   [giant]
+   (* <- lang_en;; <- name_en;;*);
+   [Гигант]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT3H21M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT3H21M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [10.10.1956](*<-lang_ru;;*);;
+    => nrel_main_idtf : [10.10.1956](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

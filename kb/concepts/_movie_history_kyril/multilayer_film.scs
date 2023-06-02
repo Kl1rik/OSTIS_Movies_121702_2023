@@ -1,0 +1,47 @@
+concept_multilayer_film
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Многослойная кинопленка ]
+(* <- lang_ru;; *);
+[Multilayer film]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Многослойная кинопленка)](*<-lang_ru;;*);
+		[Pic. (Multilayer film)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/multilayer.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Описание (Многослойная кинопленка)]
+(* <- lang_ru;; *);
+[Def. (Multilayer film)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[  В 1935 году Kodak представил первую многослойную киноплёнку, пригодную для съёмки. Это был цветной обращаемый «Кодахром», предназначенный для любительских 16-мм аппаратов, а в 1936 году на рынке появилась его 8-мм разновидность и 35-мм фотоплёнка для слайдов.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ In 1935, Kodak introduced the first multilayer film suitable for shooting. It was a color reversible "Kodachrome", designed for amateur 16-mm devices, and in 1936 its 8-mm version and 35-mm film for slides appeared on the market.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_multilayer_film
+};;
+*);
+<= nrel_inclusion: concept_color_cinema;;

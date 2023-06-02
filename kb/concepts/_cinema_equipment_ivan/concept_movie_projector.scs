@@ -1,0 +1,50 @@
+concept_movie_projector
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[кинопроектор](*<-lang_ru;;*);
+[movie projector](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (кинопроектор)](*<-lang_ru;;*);
+		[pic. (movie projector)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/movie_projector.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (кинопроектор)](*<-lang_ru;;*);
+	[def. (movie projector)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Кинопрое́ктор, кинопроекцио́нный аппара́т (от кино… и лат. projicio — бросаю вперёд) — разновидность проектора, предназначенная для воспроизведения движущегося изображения с киноплёнки. Большинство кинопроекторов, за исключением простейших узкоплёночных, кроме изображения кинофильма способны воспроизводить и его звуковое сопровождение. Один или несколько кинопроекторов — основа киноустановки.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		->rrel_example:
+		[A movie projector is an opto-mechanical device for displaying motion picture film by projecting it onto a screen. Most of the optical and mechanical elements, except for the illumination and sound devices, are present in movie cameras. Modern movie projectors are specially built video projectors.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_movie_projector
+	};;
+*);
+
+<= nrel_inclusion: concept_distribution_cinema_equipment;;

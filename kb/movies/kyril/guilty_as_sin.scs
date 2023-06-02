@@ -1,0 +1,50 @@
+guilty_as_sin<- concept_thriller;
+=> nrel_main_idtf:
+   [Guilty as Sin]
+   (* <- lang_en;; <- name_en;;*);
+   [Виновен вне подозрений]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Сообразительный чернокожий подросток Майкл по прозвищу Дерзкий работает курьером и дилером на местных наркоторговцев, предсказывающих ему большое будущее. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Quick-witted black teenager Michael, nicknamed Daring, works as a courier and dealer for local drug dealers who predict a great future for him.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [04.06.1993](*<-lang_ru;;*);;
+    => nrel_main_idtf : [04.06.1993](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [UK]
+   (* <- concept_region;;*);;
+
+
+

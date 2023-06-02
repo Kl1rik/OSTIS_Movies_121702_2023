@@ -1,0 +1,47 @@
+concept_manny_farber
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Мэнни Фарбер]
+(* <- lang_ru;; *);
+[Manny Farber]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Мэнни Фарбер)](*<-lang_ru;;*);
+		[Pic. (Manny Farber)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...     
+	(*
+		->"file://IMG/manny.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Мэнни Фарбер)]
+(* <- lang_ru;; *);
+[Def. (Manny Farber)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Мэнни Фарбер : Американский кинокритик и художник, известный своим уникальным и своеобразным подходом к кинокритике. Письма Фарбера часто фокусировались на визуальных и формальных аспектах фильмов, и он придумал термин "термитное искусство" для описания фильмов, которые углубляются в мелкие детали.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Manny Farber : American film critic and painter, known for his unique and idiosyncratic approach to film criticism. Farber's writing often focused on the visual and formal aspects of films, and he coined the term "termite art" to describe films that delve into small, often unnoticed details.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_manny_farber
+};;
+*);
+<= nrel_inclusion: concept_professional_movie_criticism;;

@@ -1,0 +1,19 @@
+concept_calendar_date<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[дата выхода](* <- lang_ru;; *);
+	[calendar date](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Дата выхода)](* <- lang_ru;; *);
+		[Def. (Calenda date)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Дата выхода - это день, когда продукт, такой как фильм, книга или игра, становится доступным для публичного распространения.]
+		(* <- lang_ru;; *);;
+		->[Release date is the day when a product, such as a movie, book, or game, becomes available for public distribution.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_movie;;

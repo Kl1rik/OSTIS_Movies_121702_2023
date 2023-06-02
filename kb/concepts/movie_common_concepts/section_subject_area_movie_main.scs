@@ -1,0 +1,48 @@
+section_subject_domain_of_movie_main <- non_atomic_section;
+
+=> nrel_main_idtf: 
+	[Section. Subject area movie](*<-lang_en;;*);
+	[Раздел. Предметная область кинофильмов](*<-lang_ru;;*);;
+
+
+section_subject_domain_of_movie_main = [*
+    subject_domain_of_movie = [*
+		=> nrel_main_idtf: 
+			[Предметная область кинофильмов](*<- lang_ru;;*);
+			[Subject area of movies](*<- lang_en;;*);;
+		
+		<- subject_domain;;
+		-> rrel_maximum_studied_object_class:
+			concept_movie;;
+
+		-> rrel_not_maximum_studied_object_class:	
+			concept_drama;
+			concept_biography;
+			concept_thriller;
+			concept_comedy;
+			concept_fantasy;
+			concept_arthouse;
+			concept_detective;
+			concept_horror;
+			concept_war_movie;;
+			
+			
+		-> rrel_explored_relation:	
+			nrel_duration_of_showing;
+			nrel_release_date;
+			nrel_region;;
+		*];;
+*];;    
+
+
+section_subject_domain_of_movie_main -> rrel_key_sc_element:	
+	concept_drama;
+	concept_biography;
+	concept_thriller;
+	concept_comedy;
+	concept_fantasy;
+	concept_movie;
+	concept_arthouse;
+	concept_detective;
+	concept_horror;
+	concept_war_movie;;

@@ -1,0 +1,47 @@
+concept_andrew_sarris
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Эндрю Саррис]
+(* <- lang_ru;; *);
+[Andrew Sarris]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Эндрю Саррис)](*<-lang_ru;;*);
+		[Pic. (Andrew Sarris)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...     
+	(*
+		->"file://IMG/andrew.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Эндрю Саррис)]
+(* <- lang_ru;; *);
+[Def. (Andrew Sarris)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Эндрю Саррис : Американский кинокритик и ведущий сторонник теории автора. Саррис был выдающейся фигурой в развитии кинокритики в Соединенных Штатах и известен своей книгой "Американское кино: режиссеры и направления 1929-1968", где он анализировал работу влиятельных американских режиссеров.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Andrew Sarris : American film critic and leading proponent of auteur theory. Sarris was a prominent figure in the development of film criticism in the United States and is known for his book "The American Cinema: Directors and Directions 1929-1968," which analyzed the work of influential American directors.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_andrew_sarris
+};;
+*);
+<= nrel_inclusion: concept_professional_movie_criticism;;

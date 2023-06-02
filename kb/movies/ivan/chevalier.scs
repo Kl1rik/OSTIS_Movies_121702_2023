@@ -1,0 +1,49 @@
+chevalier<- concept_biography;
+=> nrel_main_idtf:
+   [Chevalier]
+   (* <- lang_en;; <- name_en;;*);
+   [Шевалье]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Основано на реальной истории композитора Жозефа Болонского, шевалье де Сен-Жоржа, незаконнорожденного сына африканского раба и владельца французской плантации, который достигает высот во французском обществе как композитор перед злополучной любовной связью.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Based on the true story of composer Joseph Bologne, Chevalier de Saint-Georges, the illegitimate son of an African slave and a French plantation owner, who rises to heights in French society as a composer before an ill-fated love affair.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H48M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [05.04.2023](*<-lang_ru;;*);;
+    => nrel_main_idtf : [05.04.2023](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

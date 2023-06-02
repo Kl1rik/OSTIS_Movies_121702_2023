@@ -1,0 +1,50 @@
+jaws<- concept_thriller;
+=> nrel_main_idtf:
+   [Jaws]
+   (* <- lang_en;; <- name_en;;*);
+   [Челюсти]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Действие картины протекает в течение пяти дней — на острове Э́мити, где расположен небольшой курортный городок. В этом тихом и солнечном месте произошли ужасные трагические события...]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[The action of the picture takes place within five days - on the island of Amity, where a small resort town is located. In this quiet and sunny place, terrible tragic events took place...]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);           
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H4M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H4M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [20.06.1975](*<-lang_ru;;*);;
+    => nrel_main_idtf : [20.06.1975](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

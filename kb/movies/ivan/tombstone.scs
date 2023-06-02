@@ -1,0 +1,49 @@
+tombstone<- concept_biography;
+=> nrel_main_idtf:
+   [Tombstone]
+   (* <- lang_en;; <- name_en;;*);
+   [Тумстоун: Легенда дикого запада]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[1879 год. В США закончилась гражданская война. Шериф Эрп отказывается от своей работы, чтобы начать новую жизнь со своей семьей. Тем временем в Тумстоуне находят месторождение серебра, и в городе начинается серебряная лихорадка. В Тумстоун отправляются Эрп и его друг, Док Холлидей, а также жестокая банда убийц.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[A successful lawman's plans to retire anonymously in Tombstone, Arizona are disrupted by the kind of outlaws he was famous for eliminating.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H10M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H10M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.12.1993](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.12.1993](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

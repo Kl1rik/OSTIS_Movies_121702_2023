@@ -1,0 +1,127 @@
+section_subject_domain_of_movie_genre <- non_atomic_section;
+
+=> nrel_main_idtf: 
+	[Раздел. Предметная область киножанров](* <-lang_ru;; *);
+	[Section. Subject domain of movies](* <-lang_en;; *);;
+	
+section_subject_domain_of_movie_genre <= nrel_section_decomposition: 
+	{
+		subject_domain_of_movie_genre;
+		subject_domain_of_thriller;
+		subject_domain_of_biography;
+		subject_domain_of_comedy;
+		subject_domain_of_war_movie
+	};;	
+
+subject_domain_of_movie_genre = [*
+	=> nrel_main_idtf: 
+		[Предметная область киножанров](*<- lang_ru;;*);
+		[Subject area of movie genres](*<- lang_en;;*);;
+	
+	<- subject_domain;;
+	
+	-> rrel_maximum_studied_object_class:
+		concept_genre;;
+
+	-> rrel_not_maximum_studied_object_class:	
+		concept_comedy;
+		concept_biography;
+		concept_thriller;
+		concept_war_movie;;
+		
+		
+	-> rrel_explored_relation:	
+		nrel_duration_of_showing;
+		nrel_release_date;
+		nrel_region;;
+*];;
+
+
+subject_domain_of_thriller = [*
+	=> nrel_main_idtf: 
+		[Предметная область триллеров](*<- lang_ru;;*);
+		[Subject area of thrillers](*<- lang_en;;*);;
+
+	<- subject_domain;;
+
+	-> rrel_maximum_studied_object_class:
+		concept_thriller;;
+		
+	-> rrel_explored_relation:	
+		nrel_duration_of_showing;
+		nrel_release_date;
+		nrel_region;;	
+
+	<- subject_domain_of_movie_genre;;				
+*];;
+	
+	
+subject_domain_of_biography = [*
+	=> nrel_main_idtf: 
+		[Предметная область биографических фильмов](*<- lang_ru;;*);
+		[Subject area of biography](*<- lang_en;;*);;
+
+	<- subject_domain;;
+
+	-> rrel_maximum_studied_object_class:
+		concept_biography;;
+		
+	-> rrel_explored_relation:	
+		nrel_duration_of_showing;
+		nrel_release_date;
+		nrel_region;;	
+		
+	<- subject_domain_of_movie_genre;;						
+*];;
+
+
+subject_domain_of_comedy = [*
+	=> nrel_main_idtf: 
+		[Предметная область комедий](*<- lang_ru;;*);
+		[Subject area of comedy](*<- lang_en;;*);;
+
+	<- subject_domain;;
+
+	-> rrel_maximum_studied_object_class:
+		concept_comedy;;
+		
+	-> rrel_explored_relation:	
+		nrel_duration_of_showing;
+		nrel_release_date;
+		nrel_region;;	
+		
+	<- subject_domain_of_movie_genre;;				
+*];;
+
+
+subject_domain_of_war_movie = [*
+	=> nrel_main_idtf: 
+		[Предметная область военных фильмов](*<- lang_ru;;*);
+		[Subject area of war movie](*<- lang_en;;*);;
+
+	<- subject_domain;;
+
+	-> rrel_maximum_studied_object_class:
+		concept_war_movie;;
+		
+	-> rrel_explored_relation:	
+		nrel_duration_of_showing;
+		nrel_release_date;
+		nrel_region;;		
+		
+	<- subject_domain_of_movie_genre;;			
+*];;
+
+	
+section_subject_domain_of_movie_genre -> rrel_key_sc_element:
+	concept_humanities;
+	concept_drama;
+	concept_biography;
+	concept_thriller;
+	concept_comedy;
+	concept_fantasy;
+	concept_movie;
+	concept_arthouse;
+	concept_detective;
+	concept_horror;
+	concept_war_movie;;	

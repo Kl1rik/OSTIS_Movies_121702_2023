@@ -1,0 +1,50 @@
+concept_cinema_equipment
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[кинооборудование](*<-lang_ru;;*);
+[cinema equipment](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (кинооборудование)](*<-lang_ru;;*);
+		[pic. (cinema equipment)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/cinema_equipment.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (кинооборудование)](*<-lang_ru;;*);
+	[def. (cinema equipment)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Кинотехника — комплекс устройств и технологий, необходимых для записи и воспроизведения движущихся изображений и звукового сопровождения, а также аппаратура, применяющаяся в процессе кинопроизводства и тиражирования кинофильмов. Кинотехникой также считаются аппаратура, изобретения и физические принципы, лежащие в их основе. Кинотехника является технической основой кинематографа, базой киноискусства. Основным отличием кинотехники от других способов записи и воспроизведения движущихся изображений является возможность получения высококачественного изображения, пригодного для публичной демонстрации на большом экране в кинотеатрах.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		-> rrel_example:
+		[Cinema technology is a complex of devices and technologies necessary for recording and reproducing moving images and sound accompaniment, as well as equipment used in the process of film production and replication of films. Film technology is also considered to be equipment, inventions and the physical principles that underlie them. Cinema technology is the technical basis of cinematography, the basis of cinematography. The main difference between cinema technology and other methods of recording and playing back moving images is the possibility of obtaining a high-quality image suitable for public display on a large screen in cinemas.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_cinema_equipment
+	};;
+*);
+
+<= nrel_inclusion: concept_equipment;;

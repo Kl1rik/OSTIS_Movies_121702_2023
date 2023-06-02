@@ -1,0 +1,26 @@
+mothers_of_france <- concept_war_movie;
+
+=> nrel_main_idtf:
+	[mothers_of_france](*<-lang_en;;<-name_en;;*);
+	[meres_francaises](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H13M](*<-lang_ru;;*);
+       [PT1H13M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1917](*<-lang_ru;;*);
+       [1917](*<-lang_en;;*);;
+*);;

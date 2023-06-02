@@ -1,0 +1,47 @@
+concept_pauline_kael
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Полин Кейл]
+(* <- lang_ru;; *);
+[Pauline Kael]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Полин Кейл)](*<-lang_ru;;*);
+		[Pic. (Pauline Kael)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...     
+	(*
+		->"file://IMG/pauline.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Полин Кейл)]
+(* <- lang_ru;; *);
+[Def. (Pauline Kael)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Полин Кейл : Влиятельная американская кинокритик, известная своим ярким и мнениями, высказанными с большой силой стилем письма. Кейл писала для журнала The New Yorker более двадцати лет и была известна защитой смелых и контроверсиальных фильмов. Ее обзоры отличались остротой, умом и провокационными точками зрения.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Pauline Kael : Influential American film critic, known for her vibrant and opinionated writing style. Kael wrote for The New Yorker magazine for over two decades and was known for championing daring and controversial films. Her reviews were known for their wit, insight, and provocative viewpoints.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_pauline_kael
+};;
+*);
+<= nrel_inclusion: concept_professional_movie_criticism;;

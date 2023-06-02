@@ -1,0 +1,30 @@
+gilda<- concept_drama;
+=> nrel_main_idtf:
+   [Gilda]
+   (* <- lang_en;; <- name_en;;*);
+   [Джильда]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-16]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.06.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.06.2017](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

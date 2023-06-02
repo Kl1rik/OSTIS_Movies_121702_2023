@@ -1,0 +1,47 @@
+concept_chronophotography
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[хронофотография]
+(* <- lang_ru;; *);
+[Chronophotography]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ка́мера-обску́ра)](*<-lang_ru;;*);
+		[Pic. (Camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/chronophotography.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (Chronophotography)]
+(* <- lang_ru;; *);
+[Def. (хронофотография)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[ хронофотография - это метод создания изображений, позволяющий воссоздать движение на фотографии путем снятия нескольких кадров с определенной частотой и объединения их в один графический элемент.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ Chronophotography is a method of creating images that allows to recreate motion in a photograph by taking multiple frames at a specific frequency and combining them into a single graphic element.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_chronophotography
+};;
+*);
+<= nrel_inclusion: concept_silent_cinema;;

@@ -1,0 +1,49 @@
+the_glass_castle<- concept_biography;
+=> nrel_main_idtf:
+   [The Glass Castle]
+   (* <- lang_en;; <- name_en;;*);
+   [Стеклянный замок]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Девочка растет в неблагополучной семье нонконформистов-кочевников. Ее мать - эксцентричная художница, а отец - алкоголик. Родители пытаются вселить надежду в ее детское воображение, чтобы хоть как-то отвлечь внимание от бедности.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[A young girl comes of age in a dysfunctional family of nonconformist nomads with a mother who's an eccentric artist and an alcoholic father who would stir the children's imagination with hope as a distraction to their poverty.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H7M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H7M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.08.2017](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.08.2017](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

@@ -1,0 +1,50 @@
+dead_ringers<- concept_thriller;
+=> nrel_main_idtf:
+   [Dead Ringers]
+   (* <- lang_en;; <- name_en;;*);
+    [Связанные насмерть]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Два тела.Два разума.Одна душа.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Two bodies.Two minds.One soul.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H56M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H56M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.07.1988](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.07.1988](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

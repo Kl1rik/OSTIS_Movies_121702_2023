@@ -1,0 +1,50 @@
+concept_film_laboratory
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[проявочная машина](*<-lang_ru;;*);
+[film laboratory](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (проявочная машина)](*<-lang_ru;;*);
+		[pic. (film laboratory)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/film_laboratory.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (проявочная машина)](*<-lang_ru;;*);
+	[def. (film laboratory)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Проявочная машина, Фильм-процессор — агрегат, предназначенный для автоматической химико-фотографической обработки фотоматериалов. Наиболее высокую производительность и сложную конструкцию имеют проявочные машины, используемые в кинопроизводстве для массовой обработки киноплёнок.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		-> rrel_example:
+		[A film laboratory is a commercial service enterprise and technical facility for the film industry where specialists develop, print, and conform film material for classical film production and distribution which is based on film material, such as negative and positive, black and white and color, on different film formats: 65-70mm, 35mm, 28mm, 16mm, 9.5mm, 8mm.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_film_laboratory
+	};;
+*);
+
+<= nrel_inclusion: concept_production_cinema_equipment;;

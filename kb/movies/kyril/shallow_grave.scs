@@ -1,0 +1,50 @@
+shallow_grave<- concept_thriller;
+=> nrel_main_idtf:
+   [Shallow Grave]
+   (* <- lang_en;; <- name_en;;*);
+   [Неглубокая могила]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Трое близких друзей: Алекс Лоу, Дэвид Стивенс и Джульетт Миллер делят просторную квартиру в Эдинбурге. Нуждаясь в четвёртом сожителе, троица даёт объявление в газете.  ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Three close friends: Alex Lowe, David Stevens and Juliette Miller share a spacious apartment in Edinburgh. Needing a fourth roommate, the trio advertise in the newspaper.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);         
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H35M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H35M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.01.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.01.1995](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [UK]
+   (* <- concept_region;;*);;
+
+
+

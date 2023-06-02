@@ -1,0 +1,26 @@
+section_movie_kb <- non_atomic_section;
+
+=> nrel_main_idtf: 
+	[Section. KB of movies](*<-lang_en;;*);
+	[Раздел. БЗ по кинофильмам](*<-lang_ru;;*);;
+
+
+section_movie_kb <= nrel_section_decomposition: 
+	{
+		section_subject_domain_of_movie_main;
+		section_subject_domain_of_movie_criticism;
+		section_subject_domain_of_movie_history;
+		section_subject_domain_of_movie_genre
+	};;
+	
+section_movie_kb -> rrel_key_sc_element:	
+	concept_drama;
+	concept_biography;
+	concept_thriller;
+	concept_comedy;
+	concept_fantasy;
+	concept_movie;
+	concept_arthouse;
+	concept_detective;
+	concept_horror;
+	concept_war_movie;;

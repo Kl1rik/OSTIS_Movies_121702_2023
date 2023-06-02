@@ -1,0 +1,50 @@
+concept_equipment
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[оборудование](*<-lang_ru;;*);
+[equipment](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (оборудование)](*<-lang_ru;;*);
+		[pic. (equipment)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/equipment.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (оборудование)](*<-lang_ru;;*);
+	[def. (equipment)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Оборудование — инструменты, используемые для такого обустройства (напр. «пляжное оборудование», «световое оборудование»). К термину «оборудование» также относят совокупность машин (система), которые так устроены и управляемы, что они функционируют как единое целое для достижения одной и той же цели.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		-> rrel_example:
+		[Equipment most commonly refers to a set of tools or other objects commonly used to achieve a particular objective. Different jobs require different kinds of equipment.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_equipment
+	};;
+*);
+
+<= nrel_inclusion: concept_cinema_equipment;;

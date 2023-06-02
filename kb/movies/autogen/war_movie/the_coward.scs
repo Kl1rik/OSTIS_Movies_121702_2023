@@ -1,0 +1,26 @@
+the_coward <- concept_war_movie;
+
+=> nrel_main_idtf:
+	[blood_will_tell](*<-lang_en;;<-name_en;;*);
+	[sin_faders_son](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H17M](*<-lang_ru;;*);
+       [PT1H17M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1915](*<-lang_ru;;*);
+       [1915](*<-lang_en;;*);;
+*);;

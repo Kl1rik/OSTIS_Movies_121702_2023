@@ -1,0 +1,26 @@
+the_twins_tea_party <- concept_comedy;
+
+=> nrel_main_idtf:
+	[the_twins_tea_party](*<-lang_en;;<-name_en;;*);
+	[__](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT0H1M](*<-lang_ru;;*);
+       [PT0H1M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1896](*<-lang_ru;;*);
+       [1896](*<-lang_en;;*);;
+*);;

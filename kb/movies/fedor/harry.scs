@@ -1,0 +1,29 @@
+Harry_potter_and_the_sorcerer_stone<- concept_fantasy;
+=> nrel_main_idtf:
+   [Harry_Potter_and_the_sorcere_stone]
+   (* <- lang_en;; <- name_en;;*);
+   [Гарри_Поттер_и_философский_камень]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.11.2001](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.11.2001](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+

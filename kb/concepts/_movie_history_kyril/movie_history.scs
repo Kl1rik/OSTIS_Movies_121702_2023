@@ -1,0 +1,50 @@
+concept_movie_history
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[история кинофильмов]
+(* <- lang_ru;; *);
+[history of movie]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ка́мера-обску́ра)](*<-lang_ru;;*);
+		[Pic. (Camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/movie_history.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (история кинофильмов)]
+(* <- lang_ru;; *);
+[Def. (history of movie)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[ история кинофильмов — это область искусства, которая изучает искусство кино и его эволюцию. 
+Она включает в себя различные аспекты, такие как историческое развитие киноиндустрии, технологические инновации, развитие жанров и стилей, анализ кинофильмов и т.д.
+
+]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ The history of films is an area of art that studies the art of cinema and its evolution. It includes various aspects such as the historical development of the film industry, technological innovations, the development of genres and styles, analysis of films, and so on.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_movie_history
+};;
+*);
+<= nrel_inclusion: concept_movie;;

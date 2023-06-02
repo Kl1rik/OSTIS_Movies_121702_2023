@@ -1,0 +1,50 @@
+concept_distribution_cinema_equipment
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[оборудование для кинопроката](*<-lang_ru;;*);
+[distribution cinema equipment](*<-ang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (оборудование для кинопроката)](*<-lang_ru;;*);
+		[pic. (distribution cinema equipment)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/distribution_cinema.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (оборудование для кинопроката)](*<-lang_ru;;*);
+	[def. (distribution cinema equipment)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Кинооборудование для кинопроизводства - это подмножество кинотехники, применяемое для проката, распространения и демонстрации фильмов зрителям.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		-> rrel_example:
+		[Cinema equipment for film production is a subset of cinema equipment used for the rental, distribution and demonstration of films to the audience.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_distribution_cinema_equipment
+	};;
+*);
+
+<= nrel_inclusion: concept_cinema_equipment;;

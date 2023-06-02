@@ -1,0 +1,30 @@
+gigi<- concept_comedy;
+=> nrel_main_idtf:
+   [Gigi]
+   (* <- lang_en;; <- name_en;;*);
+   [Жижи]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H55M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H55M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.05.1958](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.05.1958](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

@@ -1,0 +1,47 @@
+concept_wb_cinema
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[черно-белое кино]
+(* <- lang_ru;; *);
+[black and white cinema]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (черно-белое кино)](*<-lang_ru;;*);
+		[Pic. (camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/wb_cinema.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (черно-белое кино)]
+(* <- lang_ru;; *);
+[Def. (black and white  cinema)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[ черно-белое кино - это фильмы, которые были сняты без использования цветной палитры. Вместо этого, они используют оттенки серого, белого и черного для создания изображения. Черно-белые фильмы были распространены в кинематографе до появления цветных фильмов в середине прошлого века. Однако даже после этого многие режиссеры продолжали использовать черно-белую палитру для создания эффекта старого времени или для усиления эмоциональной силы фильма.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ black and white films are films that have been made without the use of a color palette. Instead, they use shades of gray, white, and black to create an image. Black and white films were common in cinema until the advent of color films in the middle of the last century. However, even after that, many directors continued to use the black and white palette to create the effect of the old time or to enhance the emotional power of the film. Today, black and white films are rarely made, but some modern films still use this style to create a special atmosphere.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_wb_cinema
+};;
+*);
+<= nrel_inclusion:  concept_movie_history;;

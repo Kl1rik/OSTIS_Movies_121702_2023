@@ -1,0 +1,26 @@
+dream_of_love <- concept_biography;
+
+=> nrel_main_idtf:
+	[dream_of_love](*<-lang_en;;<-name_en;;*);
+	[adriana_lecouvreur](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H5M](*<-lang_ru;;*);
+       [PT1H5M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1928](*<-lang_ru;;*);
+       [1928](*<-lang_en;;*);;
+*);;

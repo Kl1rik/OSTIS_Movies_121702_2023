@@ -1,0 +1,49 @@
+inside_man<- concept_thriller;
+=> nrel_main_idtf:
+   [ Inside Man]
+   (* <- lang_en;; <- name_en;;*);
+    [Не пойман - не вор]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Готэм, начало 1980-х годов. Комик Артур Флек живет с больной походкой, которая с детства его учит «ходить с походом».]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Gotham, early 1980s. Comedian Arthur Fleck lives with a sick gait, which teaches him from childhood to "walk with a hike."]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);           
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H09M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H09M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.04.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.04.2006](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   uae_region;;
+
+
+

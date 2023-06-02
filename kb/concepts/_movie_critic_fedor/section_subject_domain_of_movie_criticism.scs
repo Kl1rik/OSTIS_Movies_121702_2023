@@ -1,0 +1,166 @@
+section_subject_domain_of_movie_criticism 
+
+
+=> nrel_main_idtf: 
+	[Раздел.Предметная область кинокритики]
+	(* <-lang_ru;; *);
+	[Section. Subject domain Movie criticism]
+	(* <-lang_en;; *);
+	
+<-atomic_section;;
+
+
+
+section_subject_domain_of_movie_criticism  = [*
+	
+	subject_domain_of_movie_criticism
+<- sc_node_struct;
+	=> nrel_main_idtf: [Предметная область  кинокритики]
+	(*
+		<- lang_ru;;
+	*);
+
+	=> nrel_main_idtf: [Subject area of Movie criticism]
+		(*
+			<- lang_en;;
+		*);
+
+	<- subject_domain;	
+
+
+	
+
+	
+
+	-> rrel_key_sc_element:
+		
+		concept_film_score;
+		concept_professional_movie_criticism;
+		concept_amateur_movie_criticism;
+		concept_movie_critic;
+		concept_critical_article;
+		concept_online_resource;;
+		
+
+		
+
+		
+		
+		
+	
+    subject_domain_of_professional_movie_criticism
+<- sc_node_struct;
+	=> nrel_main_idtf: [Предметная область профессиональной кинокритики]
+	(*
+		<- lang_ru;;
+	*);
+
+	=> nrel_main_idtf: [Subject area of professional movie criticism]
+		(*
+			<- lang_en;;
+		*);
+
+	<- subject_domain;	
+
+
+	-> rrel_maximum_studied_object_class:
+        concept_professional_movie_criticism;
+
+	
+
+	-> rrel_key_sc_element:
+		
+		concept_film_score;
+		concept_movie_critic;
+		concept_critical_article;;
+		
+		
+
+		
+
+		
+		
+		
+	
+
+    subject_domain_of_amateur_movie_criticism
+<- sc_node_struct;
+	=> nrel_main_idtf: [Предметная область любительской кинокритики]
+	(*
+		<- lang_ru;;
+	*);
+
+	=> nrel_main_idtf: [Subject area of amateur movie criticism]
+		(*
+			<- lang_en;;
+		*);
+
+	<- subject_domain;	
+
+    -> rrel_maximum_studied_object_class:
+        concept_amateur_movie_criticism;
+
+	
+
+	
+
+	-> rrel_key_sc_element:
+		
+		concept_online_resource;;
+		
+		
+		
+
+		
+
+		
+		
+		
+	
+		
+*];;
+
+	
+
+	
+section_subject_domain_of_movie_criticism	
+-> rrel_key_sc_element:
+    concept_professional_movie_criticism;
+    concept_amateur_movie_criticism;
+    concept_online_resource;
+    concept_movie_critic;
+    concept_critical_article;;
+    
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

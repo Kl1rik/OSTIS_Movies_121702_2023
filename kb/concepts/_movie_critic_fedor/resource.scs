@@ -1,0 +1,48 @@
+concept_online_resource
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Онлайн ресурс]
+(* <- lang_ru;; *);
+[Online resource]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Онлайн ресурс)](*<-lang_ru;;*);
+		[Pic. (Online resource)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/resource.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Онлайн ресурс)]
+(* <- lang_ru;; *);
+[Def. (Online resource)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Онлайн ресурс(с возможностью оценки кинофильмов) – это информационный ресурс, размещённый в интернете]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Online resource(with the ability to rate films) is an information recource hosted on the internet
+]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_online_resource
+};;
+*);
+<= nrel_inclusion: concept_amateur_movie_criticism;;

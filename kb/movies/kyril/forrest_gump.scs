@@ -1,0 +1,50 @@
+forrest_gump<- concept_drama;
+=> nrel_main_idtf:
+   [Forrest Gump]
+   (* <- lang_en;; <- name_en;;*);
+   [Форрест Гамп]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating Pg-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Форрест Гамп - это американская драмедия 1994 года режиссера Роберта Земекиса, в главной роли Том Хэнкс. Фильм основан на романе Уинстона Грума 1986 года того же названия. Главный герой Форрест Гамп - медленноватый, но добрый и спортивный мужчина из Алабамы, который случайно оказывается в центре событий, определяющих основные моменты 20-го века, включая войну во Вьетнаме, скандал Уотергейта и движение за гражданские права.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Forrest Gump is a 1994 American dramedy directed by Robert Zemeckis and starring Tom Hanks as the titular character. The film is based on the 1986 novel of the same name by Winston Groom. It follows the life and experiences of Forrest Gump, a slow-witted but kind-hearted and athletically-talented man from Alabama, who unwittingly finds himself at the center of some of the most defining moments of the 20th century, including the Vietnam War, Watergate, and the civil rights movement. ]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H19M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H19M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [14.06.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [14.06.1994](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

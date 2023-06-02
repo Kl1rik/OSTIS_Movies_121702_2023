@@ -1,0 +1,48 @@
+concept_professional_movie_criticism
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Профессиональная кинокритика]
+(* <- lang_ru;; *);
+[Professional movie criticism]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Профессиональная кинокритика)](*<-lang_ru;;*);
+		[Pic. (Professional movie criticism)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/professional.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Профессиональная кинокритика)]
+(* <- lang_ru;; *);
+[Def. (Professional movie criticism)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Профессиональная критика (в отличие, скажем, от критики любительской) - творческая работа, ставшая или становящаяся для её автора преобладающим родом занятий. Мера профессионализма критика определяется умением комплексно оценить объект своего наблюдения, исходя из внутренних его свойств и развивающихся потребностей общества.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Professional criticism (as opposed to, say, amateur criticism) is a creative work that has become or is becoming the predominant occupation for its author. The measure of professionalism of a critic is determined by the ability to comprehensively assess the object of his observation, based on its internal properties and the developing needs of society.
+]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_professional_movie_criticism
+};;
+*);
+<= nrel_inclusion: concept_movie_criticism;;

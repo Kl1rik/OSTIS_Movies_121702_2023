@@ -1,0 +1,51 @@
+concept_titres
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[титры ]
+(* <- lang_ru;; *);
+[titres]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (титры)](*<-lang_ru;;*);
+		[Pic. (titres)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/titres.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (титры)]
+(* <- lang_ru;; *);
+[Def. (titres)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[  титр, мн. ч. — ти́тры (фр. titre — «название, заголовок», от лат. titulus — «надпись») — поясняющие надписи, использующиеся на театральной сцене, в кинофильмах и на телевидении.
+Первые надписи в кино появляются в виде заглавных титров. Начиная с 1905 их начинают вставлять в тех местах, где они были необходимы по сюжету — до этого времени надписи иногда делали на стеклянных диапозитивах и показывали с помощью волшебного фонаря на дополнительном экранчике, помещавшемся рядом с основным.
+
+Вскоре в немом кино появились также интертитры (лат. inter — «между») — титры, показываемые по времени между обычными кадрами. Интертитры передавали содержание диалога, сообщали об изменении времени и места действия, помогали раскрытию авторского замысла. ]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ titles, plural - titles (fr. titre - "title, title", from Latin titulus - "inscription") - explanatory inscriptions used on the theatrical stage, in films and on television.
+The first inscriptions in the movie appear in the form of title credits. Beginning in 1905, they began to be inserted in those places where they were needed according to the plot - until that time, inscriptions were sometimes made on glass transparencies and shown with the help of a magic lantern on an additional screen placed next to the main one. Soon, intertitles (Latin inter - "between") also appeared in silent films - titles shown in time between ordinary frames. Intertitles conveyed the content of the dialogue, reported on the change in time and place of action, helped to reveal the author's intention.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_titres
+};;
+*);
+<= nrel_inclusion: concept_silent_cinema;;

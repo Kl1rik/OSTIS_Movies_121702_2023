@@ -1,0 +1,47 @@
+concept_videocamera
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[видеокамера ]
+(* <- lang_ru;; *);
+[videocamera ]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (видеокамера)](*<-lang_ru;;*);
+		[Pic. (videocamera )](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/videocamera.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (видеокамера)]
+(* <- lang_ru;; *);
+[Def. (videocamera)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[  видеокамера — устройство, предназначенное для преобразования оптического изображения, получаемого при помощи объектива на мишени вакуумной передающей трубки или на светочувствительной матрице в телевизионный видеосигнал или цифровой поток видеоданных. ]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ videocamera is a device designed to convert an optical image obtained using a lens on a target of a vacuum transmission tube or on a photosensitive matrix into a television video signal or a digital video data stream.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_videocamera
+};;
+*);
+<= nrel_inclusion: concept_color_cinema;;

@@ -1,0 +1,50 @@
+heat<- concept_thriller;
+=> nrel_main_idtf:
+   [Heat]
+   (* <- lang_en;; <- name_en;;*);
+   [Схватка]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Банда Нила Макколи (Роберт Де Ниро), действующая в Лос-Анджелесе и пригородах, основана не только на принципах строгой дисциплины и тщательной подготовки преступлений, но и на старых товарищеских отношениях её участников ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[The gang of Neil McCauley (Robert De Niro), operating in Los Angeles and the suburbs, is based not only on the principles of strict discipline and careful preparation of crimes, but also on the old companionship of its members.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H24M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H24M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [16.01.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [16.01.1995](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [Cuba]
+   (* <- concept_region;;*);;
+
+
+

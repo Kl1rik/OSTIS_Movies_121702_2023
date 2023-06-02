@@ -1,0 +1,26 @@
+the_log_of_the_u_35 <- concept_war_movie;
+
+=> nrel_main_idtf:
+	[the_log_of_the_u_35](*<-lang_en;;<-name_en;;*);
+	[the_log_of_the_u_35](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT0H45M](*<-lang_ru;;*);
+       [PT0H45M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1919](*<-lang_ru;;*);
+       [1919](*<-lang_en;;*);;
+*);;

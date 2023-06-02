@@ -1,0 +1,26 @@
+caught_in_the_fog <- concept_thriller;
+
+=> nrel_main_idtf:
+	[caught_in_the_fog](*<-lang_en;;<-name_en;;*);
+	[prisioneros_en_la_niebla](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H10M](*<-lang_ru;;*);
+       [PT1H10M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1928](*<-lang_ru;;*);
+       [1928](*<-lang_en;;*);;
+*);;

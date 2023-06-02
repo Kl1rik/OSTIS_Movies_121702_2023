@@ -1,0 +1,50 @@
+concept_film_recorder
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[фильм-реко́рдер](*<-lang_ru;;*);
+[optical printer](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (фильм-реко́рдер)](*<-lang_ru;;*);
+		[pic. (film recorder)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/film_recorder.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (кинокопировальный аппарат)](*<-lang_ru;;*);
+	[def. (film recorder)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Фи́льм-реко́рдер, Фильм-принтер – устройство графического вывода, предназначенное для печати цифрового изображения на киноплёнке или фотоплёнке. Применяется, главным образом, в цифровом кинематографе для изготовления плёночных фильмокопий, и в полиграфии для изготовления офсетных фотоформ (фотовывод).]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		->rrel_example:
+		[A film recorder is a graphical output device for transferring images to photographic film from a digital source. In a typical film recorder, an image is passed from a host computer to a mechanism to expose film through a variety of methods, historically by direct photography of a high-resolution cathode ray tube (CRT) display.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_film_recorder
+	};;
+*);
+
+<= nrel_inclusion: concept_production_cinema_equipment;;

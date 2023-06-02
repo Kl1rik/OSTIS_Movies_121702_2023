@@ -1,0 +1,50 @@
+traitors<- concept_thriller;
+=> nrel_main_idtf:
+   [Traitors]
+   (* <- lang_en;; <- name_en;;*);
+   [Предатели]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Услышав что враги (британцы) планируют провести политику "выжженной земли", любящий отец и муж, который также является бурским офицером, решает вернутся домой чтоб защитить свою семью, вместо того, чтобы продолжать участие в войне. Это решение приводит к тому, что его и его сыновей судят за государственную измену. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Hearing that the enemy (the British) are planning a "scorched earth" policy, the loving father and husband, who is also a Boer officer, decides to return home to protect his family instead of continuing to fight the war. This decision results in him and his sons being tried for treason.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);          
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT0H60M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT0H60M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.08.2019](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.08.2019](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

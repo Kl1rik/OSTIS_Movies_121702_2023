@@ -1,0 +1,19 @@
+concept_comedy <- sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[комедия](* <- lang_ru;; *);
+	[comedy](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Комедия)](* <- lang_ru;; *);
+		[Def. (Comedy)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Комедия - жанр кинопроизведений, в основе которых эстетические категории сатиры, юмора, буффонады. ]
+		(* <- lang_ru;; *);;
+		->[Comedy - a genre of film works based on the aesthetic categories of satire, humor, buffoonery.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_genre;;

@@ -1,0 +1,49 @@
+the_good_nurse<- concept_biography;
+=> nrel_main_idtf:
+   [The Good Nurse]
+   (* <- lang_en;; <- name_en;;*);
+   [Добрый медбрат]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Чарльз Каллен был на хорошем счету в больнице, проработал медбратом 16 лет, и, как считает полиция, за это время убил около 300 человек. В жизни он был любящим отцом, заботливым мужем, примерным сыном и приятным коллегой. Полицейские убеждают медсестру, знакомую с Калленом, помочь им в поимке преступника.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[An infamous caregiver is implicated in the deaths of hundreds of hospital patients.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H1M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H1M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [11.09.2022](*<-lang_ru;;*);;
+    => nrel_main_idtf : [11.09.2022](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

@@ -1,0 +1,26 @@
+custers_last_fight <- concept_biography;
+
+=> nrel_main_idtf:
+	[centers_last_fight](*<-lang_en;;<-name_en;;*);
+	[general_custers_sidste_kamp](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT0H30M](*<-lang_ru;;*);
+       [PT0H30M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1912](*<-lang_ru;;*);
+       [1912](*<-lang_en;;*);;
+*);;

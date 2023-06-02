@@ -1,0 +1,50 @@
+concept_flatbed_table
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[монтажный стол](*<-lang_ru;;*);
+[flatbed table](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (монтажный стол)](*<-lang_ru;;*);
+		[pic. (flatbed_table)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/flatbed_table.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (монтажный стол)](*<-lang_ru;;*);
+	[def. (flatbed table)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Монта́жный стол — устройство для просмотра отснятой киноплёнки и монтажа кинофильмов. Используется при «оптической» технологии кинопроизводства в цехах монтажа на киностудиях. В настоящее время простейшие монтажные столы используются в кинохранилищах для просмотра архивных киноплёнок, а также в кинотеатрах для склеивания частей фильма в один рулон, предназначенный для плэттеров. Упрощённые устройства просмотра 8 и 16-мм киноплёнки — киноскопы — выпускались для кинолюбителей.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		->rrel_example:
+		[A flatbed editor is a type of machine used to edit film for a motion picture.Picture and sound rolls load onto separate motorized disks, called "plates." Each set of plates moves forward or backward separately or locked together to maintain synchronization between picture and sound. A prism reflects the film image onto a viewing screen, while a magnetic playback head reads the magnetic audio tracks.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_flatbed_table
+	};;
+*);
+
+<= nrel_inclusion: concept_production_cinema_equipment;;

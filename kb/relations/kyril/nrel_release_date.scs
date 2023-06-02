@@ -1,0 +1,52 @@
+nrel_release_date
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-asymmetric_relation;
+=>nrel_main_idtf:
+	[Дата выхода*]
+	(* <- lang_ru;; *);
+	[Release date*]
+	(* <- lang_en;; *);
+=>nrel_first_domain: concept_movie;
+=>nrel_second_domain: concept_calendar_date;
+=>nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_movie;
+		concept_calendar_date
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Страна производства*)]
+		(* <- lang_ru;; *);
+		[Def. (Production country*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Дата выхода** - бинарное отношение, связывающее фильм и его дату выхода .]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Release date* - a binary relation that connects a movie and his release date.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_movie;
+            concept_calendar_date
+		};;
+	*);;

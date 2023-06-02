@@ -1,0 +1,26 @@
+with_davy_crockett_at_the_fall_of_the_alamo <- concept_biography;
+
+=> nrel_main_idtf:
+	[with_davy_crockett_at_the_fall_of_the_alamo](*<-lang_en;;<-name_en;;*);
+	[with_davy_crockett_at_the_fall_of_the_alamo](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H0M](*<-lang_ru;;*);
+       [PT1H0M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1926](*<-lang_ru;;*);
+       [1926](*<-lang_en;;*);;
+*);;

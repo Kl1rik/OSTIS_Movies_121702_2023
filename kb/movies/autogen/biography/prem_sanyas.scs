@@ -1,0 +1,26 @@
+prem_sanyas <- concept_biography;
+
+=> nrel_main_idtf:
+	[prem_sanyas](*<-lang_en;;<-name_en;;*);
+	[prem_sanyas](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H37M](*<-lang_ru;;*);
+       [PT1H37M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1925](*<-lang_ru;;*);
+       [1925](*<-lang_en;;*);;
+*);;

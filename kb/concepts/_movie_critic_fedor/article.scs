@@ -1,0 +1,50 @@
+concept_critical_article
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Критическая статья]
+(* <- lang_ru;; *);
+[Critical article]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Любительская кинокритика)](*<-lang_ru;;*);
+		[Pic. (Critical article)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/article.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Критическая статья)]
+(* <- lang_ru;; *);
+[Def. (Critical article)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Критическая статья — один из основных жанров литературной критики. В ней даются разбор и оценка книги, ее темы, идейного содержания, языка и стиля, указывается значение в ряду других работ писателя и др. ]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[The critical article is one of the main genres of literary criticism. It provides an analysis and evaluation of the book, its theme, ideological content, language and style, indicates the significance in a number of other works of the writer, etc.
+
+
+]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_critical_article
+};;
+*);
+<= nrel_inclusion: concept_professional_movie_criticism;;

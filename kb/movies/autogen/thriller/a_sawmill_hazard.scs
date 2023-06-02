@@ -1,0 +1,26 @@
+a_sawmill_hazard <- concept_thriller;
+
+=> nrel_main_idtf:
+	[a_sawmill_hazard](*<-lang_en;;<-name_en;;*);
+	[a_sawmill_hazard](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT0H28M](*<-lang_ru;;*);
+       [PT0H28M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1913](*<-lang_ru;;*);
+       [1913](*<-lang_en;;*);;
+*);;

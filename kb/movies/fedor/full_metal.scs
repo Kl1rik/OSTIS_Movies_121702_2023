@@ -1,0 +1,27 @@
+full_metal_jacket<- concept_war_movie;
+=> nrel_main_idtf:
+   [Full Metal Jacket]
+   (* <- lang_en;; <- name_en;;*);
+   [Целино металлическая оболочка]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [26.06.1987](*<-lang_ru;;*);;
+    => nrel_main_idtf : [26.06.1987](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;

@@ -1,0 +1,26 @@
+how_brother_cook_was_taught_a_lesson <- concept_comedy;
+
+=> nrel_main_idtf:
+	[quand_les_diables_font_des_siennes](*<-lang_en;;<-name_en;;*);
+	[quand_les_diables_font_des_siennes](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT0H15M](*<-lang_ru;;*);
+       [PT0H15M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1910](*<-lang_ru;;*);
+       [1910](*<-lang_en;;*);;
+*);;

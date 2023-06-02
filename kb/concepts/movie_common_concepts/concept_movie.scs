@@ -1,0 +1,18 @@
+concept_movie<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[кинофильм](* <- lang_ru;; *);
+	[movie](* <- lang_en;; *);
+
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (кинофильм)](* <- lang_ru;; *);
+		[Def. (movie)](* <- lang_en;; *);;
+	<=nrel_sc_text_translation:...(*
+		->[Кинофильм - это художественный фильм, предназначенный для показа в кинотеатрах или на телевидении.]
+		(* <- lang_ru;; *);;
+		->[Movie is an artistic film intended for showing in cinemas or on television.]
+		(* <- lang_en;; *);;
+	*);;
+*);;

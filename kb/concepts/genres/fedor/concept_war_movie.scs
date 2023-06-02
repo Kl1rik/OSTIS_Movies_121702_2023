@@ -1,0 +1,19 @@
+concept_war_movie <- sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[фильм о войне](* <- lang_ru;; *);
+	[war movie](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Фильм о войне)](* <- lang_ru;; *);
+		[Def. (War movie)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Фильм о войне - жанр кинопроизведений, главной темой которых является война. В фильмах этого жанра зачастую изображают боевые действия, жертвы войны, героизм солдат и т. д. ]
+		(* <- lang_ru;; *);;
+		->[War Movie - a genre of film works, the main theme of which is war. In movies of this genre, combat actions, war casualties, soldier heroism, and other related topics are often depicted.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_genre;;

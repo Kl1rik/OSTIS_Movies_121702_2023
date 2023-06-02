@@ -1,0 +1,27 @@
+the_thin_red_line<- concept_war_movie;
+=> nrel_main_idtf:
+   [The thin red line]
+   (* <- lang_en;; <- name_en;;*);
+   [Тонкая красная линия]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H50M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H50M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [25.12.1998](*<-lang_ru;;*);;
+    => nrel_main_idtf : [25.12.1998](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;

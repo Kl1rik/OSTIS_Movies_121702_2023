@@ -1,0 +1,50 @@
+hackers<- concept_thriller;
+=> nrel_main_idtf:
+   [Hackers]
+   (* <- lang_en;; <- name_en;;*);
+   [Хакеры]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Хакеры - это американский киберпанк-фильм 1995 года, режиссером которого был Иэн Софтли, а в главных ролях снимались Джонни Ли Миллер, Анджелина Джоли и Мэттью Лиллард. Фильм рассказывает историю группы хакеров, учащихся в старшей школе, которые раскрывают заговор крупной корпорации. Хакеры вынуждены объединить усилия, чтобы предотвратить реализацию зловещих планов корпорации.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Hackers is a 1995 American cyberpunk film directed by Iain Softley and starring Jonny Lee Miller, Angelina Jolie, and Matthew Lillard. The film follows a group of high school hackers who uncover a conspiracy involving a major corporation. The hackers must work together to prevent the corporation from carrying out their evil plans.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H47M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H47M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.08.1995](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.08.1995](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [UK]
+   (* <- concept_region;;*);;
+
+
+

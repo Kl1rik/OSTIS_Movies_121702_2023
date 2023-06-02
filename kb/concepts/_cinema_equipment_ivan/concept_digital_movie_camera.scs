@@ -1,0 +1,50 @@
+concept_digital_movie_camera
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[цифровая кинокамера](*<-lang_ru;;*);
+[digital movie camera](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (цифровая кинокамера)](*<-lang_ru;;*);
+		[pic. (digital movie camera)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/digital_movie_camera.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (цифровая кинокамера)](*<-lang_ru;;*);
+	[def. (digital movie camera)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Цифрова́я кинока́мера — видеокамера высокого разрешения, предназначенная для съёмки кинофильмов по бесплёночной цифровой технологии. Для преобразования света в цифровые видеоданные такие кинокамеры используют ПЗС- или КМОП-матрицы.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		-> rrel_example:
+		[A digital movie camera for digital cinematography is a video camera that captures footage digitally rather than the historically used movie camera, which shoots on film stock. Different digital movie cameras output a variety of different acquisition formats.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_digital_movie_camera
+	};;
+*);
+
+<= nrel_inclusion: concept_production_cinema_equipment;;

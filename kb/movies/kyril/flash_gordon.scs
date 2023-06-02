@@ -1,0 +1,50 @@
+flash_gordon<- concept_thriller;
+=> nrel_main_idtf:
+   [Flash Gordon]
+   (* <- lang_en;; <- name_en;;*);
+   [Флэш Гордон]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-16]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Минг Беспощадный, диктатор планеты Монго, намеревается уничтожить Землю, посылая на неё разрушительное излучение. Игрок в американский футбол, Флэш Гордон и его подруга Арден отправляются на Монго на ракете доктора Заркова, чтобы остановить Минга. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Ming the Merciless, dictator of the planet Mongo, is revealed to be destroying the earth by sending destructive radiation at it. American football player Flash Gordon and his girlfriend Arden travel to Mongo in Dr. Zarkov's rocket to retrieve Ming.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);         
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.04.1980](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.04.1980](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

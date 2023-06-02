@@ -1,0 +1,19 @@
+concept_time_showing<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[время показа](* <- lang_ru;; *);
+	[film screening](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Время показа)](* <- lang_ru;; *);
+		[Def. (Film screening)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Время показа фильма - это период времени, в течение которого фильм будет]
+		(* <- lang_ru;; *);;
+		->[Film screening time is the period during which a film will be shown to audiences.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_movie;;

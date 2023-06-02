@@ -1,0 +1,50 @@
+jarhead<- concept_biography;
+=> nrel_main_idtf:
+   [Jarhead]
+   (* <- lang_en;; <- name_en;;*);
+   [Морпехи]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Морпехи(Jarhead) - это военный драматический фильм 2005 года режиссера Сэма Мендеса с Джейком Джилленхолом, Джейми Фоксом и Питером Сарсгаардом в главных ролях. Фильм основан на реальных событиях и рассказывает историю американских морских пехотинцев, проходящих подготовку и участвующих в первой войне в Персидском заливе.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Jarhead is a 2005 American war drama film directed by Sam Mendes and starring Jake Gyllenhaal, Jamie Foxx, and Peter Sarsgaard. The film is based on real events and tells the story of American Marines undergoing training and deployed to fight in the first Gulf War.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);           
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H5M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H5M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.10.2005](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.10.2005](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

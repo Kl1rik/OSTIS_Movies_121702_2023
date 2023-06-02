@@ -1,0 +1,49 @@
+the_pianist<- concept_biography;
+=> nrel_main_idtf:
+   [The Pianist]
+   (* <- lang_en;; <- name_en;;*);
+   [Пианист]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Ужасы Холокоста глазами музыканта. Выдающаяся роль Эдриана Броуди и «Золотая пальмовая ветвь» в Каннах]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H29M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H29M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [24.05.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [24.05.2003](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

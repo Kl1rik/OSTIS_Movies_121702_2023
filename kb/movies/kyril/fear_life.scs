@@ -1,0 +1,49 @@
+fear_life<- concept_thriller;
+=> nrel_main_idtf:
+   [FearLife]
+   (* <- lang_en;; <- name_en;;*);
+   [Жизнь в страхе]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Певец возвращается в свой родной город под темной тучей, и вскоре его приезд подвергает опасности всех, кто ему дорог.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[A singer returns to his hometown under a dark cloud and soon his arrival puts everyone he cares about in danger.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H18M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H18M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.05.2013](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.05.2013](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [Mexico]
+   (* <- concept_region;;*);;
+
+

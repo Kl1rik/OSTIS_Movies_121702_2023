@@ -1,0 +1,203 @@
+section_subject_domain_of_movie_history_by_period 
+
+
+=> nrel_main_idtf: 
+	[Раздел.Предметная область истории кинофильмов по хронологическим периодам]
+	(* <-lang_ru;; *);
+	[Section. Subject domain Movie history]
+	(* <-lang_en;; *);
+	
+<-atomic_section;;
+
+
+
+section_subject_domain_of_movie_history_by_period  = [*
+	
+
+subject_domain_of_wb_cinema
+<- sc_node_struct;
+	=> nrel_main_idtf: [Предметная область  черно-белого кино]
+	(*
+		<- lang_ru;;
+	*);
+
+	=> nrel_main_idtf: [Subject area white and black cinema]
+		(*
+			<- lang_en;;
+		*);
+
+	<- subject_domain;	
+
+
+	-> rrel_maximum_studied_object_class:
+        concept_wb_cinema;
+
+	
+
+	-> rrel_key_sc_element:
+		
+		
+		subject_domain_of_silent_cinema;
+		subject_domain_of_sound_cinema;;
+		
+
+		
+		
+		
+	
+    subject_domain_of_silent_cinema
+<- sc_node_struct;
+	=> nrel_main_idtf: [Предметная область  немого кино]
+	(*
+		<- lang_ru;;
+	*);
+
+	=> nrel_main_idtf: [Subject area Silent cinema]
+		(*
+			<- lang_en;;
+		*);
+
+	<- subject_domain;	
+
+
+	-> rrel_maximum_studied_object_class:
+        concept_silent_cinema;
+
+	
+
+	-> rrel_key_sc_element:
+		
+		
+		concept_camera_obscura;
+		concept_chronophotography;
+		concept_optical_theatre;
+		concept_kinetoscope;;
+		
+		
+
+		
+
+		
+		
+		
+	subject_domain_of_sound_cinema
+<- sc_node_struct;
+	=> nrel_main_idtf: [Предметная область  звукового кино]
+	(*
+		<- lang_ru;;
+	*);
+
+	=> nrel_main_idtf: [Subject area sound cinema]
+		(*
+			<- lang_en;;
+		*);
+
+	<- subject_domain;	
+
+
+	-> rrel_maximum_studied_object_class:
+        concept_sound_cinema;
+
+	
+
+	-> rrel_key_sc_element:
+		
+		
+		concept_camera_obscura;
+		concept_chronophotography;
+		concept_optical_theatre;
+		concept_kinetoscope;;
+		
+		
+
+		
+
+		
+		
+		
+	
+
+    subject_domain_of_color_cinema 
+<- sc_node_struct;
+	=> nrel_main_idtf: [Предметная область  цветного кино]
+	(*
+		<- lang_ru;;
+	*);
+
+	=> nrel_main_idtf: [Subject area Color cinema]
+		(*
+			<- lang_en;;
+		*);
+
+	<- subject_domain;	
+
+    -> rrel_maximum_studied_object_class:
+        concept_color_cinema;
+
+	
+
+	
+
+	-> rrel_key_sc_element:
+		
+		concept_projector;
+		concept_videocamera;;
+		
+		
+		
+
+		
+
+		
+		
+		
+	
+		
+*];;
+
+	
+
+	
+section_subject_domain_of_movie_history_by_period	
+-> rrel_key_sc_element:
+	concept_silent_cinema;
+    concept_camera_obscura;
+    concept_chronophotography;
+    concept_optical_theatre;
+    concept_kinetoscope;
+    concept_color_cinema;
+    concept_projector;;
+    
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

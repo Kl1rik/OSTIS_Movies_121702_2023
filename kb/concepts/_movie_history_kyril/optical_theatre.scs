@@ -1,0 +1,49 @@
+concept_optical_theatre
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Оптический театр]
+(* <- lang_ru;; *);
+[Optical theatre]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ка́мера-обску́ра)](*<-lang_ru;;*);
+		[Pic. (Camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/optical_theatre.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (Оптический театр)]
+(* <- lang_ru;; *);
+[Def. (Optical theatre)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[  Оптический театр - это устройство, использующее зеркала и линзы для создания оптических иллюзий, которые затем проецируются на экран.
+   Данные устройства принадлежат эпохе немого кино.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[  An optical theatre is a device that uses mirrors and lenses to create optical illusions, which are then projected onto a screen.
+ These devices belong to the silent film era.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_optical_theatre
+};;
+*);
+<= nrel_inclusion: concept_silent_cinema;;

@@ -1,0 +1,53 @@
+concept_camera_obscura
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[ка́мера-обску́ра]
+(* <- lang_ru;; *);
+[Camera obscura]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (ка́мера-обску́ра)](*<-lang_ru;;*);
+		[Pic. (Camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/obscura.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (ка́мера-обску́ра)]
+(* <- lang_ru;; *);
+[Def. (Camera obscura)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[ка́мера-обску́ра - простейший вид устройства, позволяющего получать оптическое изображение объектов.
+
+Представляет собой светонепроницаемый ящик с отверстием в одной из стенок и экраном (матовым стеклом или тонкой белой бумагой) на противоположной стене. 
+Лучи света, проходя сквозь малое отверстие (диаметр которого зависит от «фокусного расстояния» камеры, приблизительно 0,1—5 мм), создают перевёрнутое изображение на экране.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[A camera obscura is the simplest type of device that allows you to obtain an optical image of objects.
+
+It is a lightproof box with a hole in one of the walls and a screen (frosted glass or thin white paper) on the opposite wall.
+Rays of light, passing through a small hole (the diameter of which depends on the "focal length" of the camera, approximately 0.1-5 mm), create an inverted image on the screen.]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_camera_obscura
+};;
+*);
+<= nrel_inclusion: concept_silent_cinema;;

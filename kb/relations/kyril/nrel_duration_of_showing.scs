@@ -1,0 +1,52 @@
+nrel_duration_of_showing
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-asymmetric_relation;
+=>nrel_main_idtf:
+	[Время показа*]
+	(* <- lang_ru;; *);
+	[Film screening*]
+	(* <- lang_en;; *);
+=>nrel_first_domain: concept_movie;
+=>nrel_second_domain: concept_time_showing;
+=>nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_movie;
+		concept_time_showing
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Время показа*)]
+		(* <- lang_ru;; *);
+		[Def. (Film screening*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Время показа* - бинарное отношение, связывающее фильм и длительность его показа.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Film screening* - a binary relation that connects a movie and his duration.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_movie;
+            concept_time_showing
+		};;
+	*);;

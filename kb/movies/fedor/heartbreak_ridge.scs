@@ -1,0 +1,30 @@
+heartbreak_ridge<- concept_war_movie;
+=> nrel_main_idtf:
+   [heartbreak ridge]
+   (* <- lang_en;; <- name_en;;*);
+   [Перевал разбитых сердец]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H45M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H45M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [12.05.1986](*<-lang_ru;;*);;
+    => nrel_main_idtf : [12.05.1986](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

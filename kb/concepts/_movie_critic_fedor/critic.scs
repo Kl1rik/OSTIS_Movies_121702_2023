@@ -1,0 +1,49 @@
+concept_movie_critic
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[Кинокритик]
+(* <- lang_ru;; *);
+[Movie critic]
+(* <- lang_en;; *);
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Кинокритик)](*<-lang_ru;;*);
+		[Pic. (Movie critic)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/critic.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...
+(*
+=>nrel_main_idtf:
+[Опр. (Кинокритик)]
+(* <- lang_ru;; *);
+[Def. (Movie critic)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[Кинокритик – это специалист, который занимается рецензированием фильмов, анализом кинопроцесса. Профессионалы не просто смотрят кино и высказывают о нем личное мнение. Важно объективно оценивать режиссерскую, операторскую, актерскую работу и художественные решения.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[A movie critic is a specialist who reviews films and analyzes the film process. Professionals do not just watch a movie and express their personal opinion about it. It is important to objectively evaluate the director's, cameraman's, actor's work and artistic decisions.
+
+]
+(* <- lang_en;; *);;
+*);;
+<= nrel_using_constants:
+{
+concept_movie_critic
+};;
+*);
+<= nrel_inclusion: concept_professional_movie_criticism;;

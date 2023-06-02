@@ -1,0 +1,49 @@
+moneyball<- concept_biography;
+=> nrel_main_idtf:
+   [Moneyball]
+   (* <- lang_en;; <- name_en;;*);
+   [Человек, который изменил всё]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Менеджер-визионер пытается сделать из аутсайдеров чемпионов. Спортивная драма по сценарию Аарона Соркина]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Oakland A's general manager Billy Beane's successful attempt to assemble a baseball team on a lean budget by employing computer-generated analysis to acquire new players.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H6M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H6M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [09.09.2011](*<-lang_ru;;*);;
+    => nrel_main_idtf : [09.09.2011](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

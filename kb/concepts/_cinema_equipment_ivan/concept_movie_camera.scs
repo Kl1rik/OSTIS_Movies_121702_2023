@@ -1,0 +1,50 @@
+concept_movie_camera
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[кинокамера](*<-lang_ru;;*);
+[movie camera](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (кинокамера)](*<-lang_ru;;*);
+		[pic. (movie camera)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/movie_camera.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (кинокамера)](*<-lang_ru;;*);
+	[def. (movie camera)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Киносъёмочный аппара́т, киносъёмочная ка́мера, кинока́мера — устройство, предназначенное для записи движущегося изображения на киноплёнку. Процесс записи называется киносъёмкой, а полученное в результате изображение используется для создания кинофильма.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		-> rrel_example:
+		[A movie camera (also known as a film camera and cine-camera) is a type of photographic camera that rapidly takes a sequence of photographs, either onto film stock or an image sensor, in order to produce a moving image to display on a screen.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_movie_camera
+	};;
+*);
+
+<= nrel_inclusion: concept_production_cinema_equipment;;

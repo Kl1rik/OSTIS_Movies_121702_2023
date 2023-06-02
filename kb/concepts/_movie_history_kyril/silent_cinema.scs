@@ -1,0 +1,56 @@
+concept_silent_cinema
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[немое кино]
+(* <- lang_ru;; *);
+[silent Cinema]
+(* <- lang_en;; *);
+
+
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (немое кино)](*<-lang_ru;;*);
+		[Pic. (Camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/silent_cinema.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (немое кино)]
+(* <- lang_ru;; *);
+[Def. (silent Cinema)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[ немое кино -  разновидность кинематографа, не имеющая записанного звукового сопровождения. С момента изобретения кинотехнологии и вплоть до появления звукового кино немые фильмы были единственной разновидностью кинофильмов.]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[ silent cinema is a kind of cinematography that does not have a recorded sound accompaniment. From the invention of motion picture technology to the advent of sound films, silent films were the only type of motion picture.]
+(* <- lang_en;; *);;
+*);;
+=>nrel_create_date:
+   [1871]
+   (* <- concept_calendar_date;;*);;
+
+=>nrel_end_date:
+   [1928]
+   (* <- concept_calendar_date;;*);;
+<= nrel_using_constants:
+{
+concept_silent_cinema
+};;
+*);
+<= nrel_inclusion: concept_wb_cinema;;

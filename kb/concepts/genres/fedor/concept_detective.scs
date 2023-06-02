@@ -1,0 +1,19 @@
+concept_detective <- sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[детектив](* <- lang_ru;; *);
+	[detective](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Детектив)](* <- lang_ru;; *);
+		[Def. (Detective)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Детектив - жанр литературы, кино и других видов искусства, в котором основной сюжет связан с расследованием преступления и поиском его виновных.]
+		(* <- lang_ru;; *);;
+		->[Detective - a genre of literature, film, and other forms of art in which the main plot is centered around the investigation of a crime and the search for the guilty party.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_genre;;

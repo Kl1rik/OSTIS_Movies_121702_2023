@@ -1,0 +1,30 @@
+ice_princess<- concept_comedy;
+=> nrel_main_idtf:
+   [Ice Princess]
+   (* <- lang_en;; <- name_en;;*);
+   [Принцесса льда]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-12]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H37M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H37M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [02.04.1980](*<-lang_ru;;*);;
+    => nrel_main_idtf : [02.04.1980](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

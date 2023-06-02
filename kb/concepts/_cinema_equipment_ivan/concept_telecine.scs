@@ -1,0 +1,50 @@
+concept_telecine
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[телекинопроектор](*<-lang_ru;;*);
+[telecine](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (телекинопроектор)](*<-lang_ru;;*);
+		[pic. (telecine)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/telecine.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (телекинопроектор)](*<-lang_ru;;*);
+	[def. (telecine)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Телекинопрое́ктор, телекинопереда́тчик, телекинода́тчик — устройство для преобразования изображения на киноплёнке в телевизионный видеосигнал. По ГОСТ 21879—88 телекинодатчиком считается телевизионный датчик, предназначенный для телевизионного анализа передаваемого кинофильма при помощи оптоэлектронного преобразования. При наличии на воспроизводимой фильмокопии совмещённой фонограммы она также преобразуется в звуковой сигнал.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		->rrel_example:
+		[Telecine (/ˈtɛləsɪneɪ/ or /ˌtɛləˈsɪneɪ/) is the process of transferring film into video and is performed in a color suite. The term is also used to refer to the equipment used in the post-production process. Telecine enables a motion picture, captured originally on film stock, to be viewed with standard video equipment, such as television sets, video cassette recorders (VCR), DVD, Blu-ray Disc or computers. Initially, this allowed television broadcasters to produce programs using film, usually 16-mm stock, but transmit them in the same format, and quality, as other forms of television production.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_telecine
+	};;
+*);
+
+<= nrel_inclusion: concept_distribution_cinema_equipment;;

@@ -1,0 +1,19 @@
+concept_region<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[страна производства](* <- lang_ru;; *);
+	[production country](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Страна производства)](* <- lang_ru;; *);
+		[Def. (Production country)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Страна производства  - это страна(или несколько стран), в которой был создан и произведен  фильм,а также снималась основная часть сцен.]
+		(* <- lang_ru;; *);;
+		->[The country of production is the country (or several countries) in which the film was created and produced, as well as the bulk of the scenes were filmed.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_movie;;

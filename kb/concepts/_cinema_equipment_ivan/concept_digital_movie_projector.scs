@@ -1,0 +1,50 @@
+concept_digital_movie_projector
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[цифровой кинопроектор](*<-lang_ru;;*);
+[digital movie projector](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (цифровой кинопроектор)](*<-lang_ru;;*);
+		[pic. (digital movie projector)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/digital_movie_projector.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (цифровой кинопроектор)](*<-lang_ru;;*);
+	[def. (digital movie projector)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Цифрово́й кинопрое́ктор — видеопроектор с высокой разрешающей способностью и мощным световым потоком, специально спроектированный для демонстрации цифровых кинофильмов на большом экране в кинотеатре. Является конечным устройством технологии цифрового кинематографа, позволяющего при производстве и демонстрации фильмов обходиться без киноплёнки.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		->rrel_example:
+		[The Digital Cinema Projector is a high resolution video projector with high light output, specially designed for displaying digital movies on a large screen in a cinema. It is the ultimate device of digital cinema technology, which makes it possible to dispense with film in the production and demonstration of films.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_digital_movie_projector
+	};;
+*);
+
+<= nrel_inclusion: concept_distribution_cinema_equipment;;

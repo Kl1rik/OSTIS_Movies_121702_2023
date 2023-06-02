@@ -1,0 +1,35 @@
+concept_biography
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[биографический фильм](* <- lang_ru;; *);
+	[biography](* <- lang_en;; *);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[опр. (биографический фильм)](* <- lang_ru;; *);
+		[def. (biography)](* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Биографи́ческий фильм — кинематографический жанр (или отдельное художественное произведение), повествующий о судьбе знаменитой, известной личности на протяжении всей жизни или в наиболее важные драматические её моменты. В отличие от картин, основанных на подлинных событиях, или исторических фильмов, целью биографического фильма является не хроникальное освещение случившихся фактов и событий, а влияние конкретной персоны на их исход.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[A biographical film or biopic is a film that dramatizes the life of a non-fictional or historically-based person or people. Such films show the life of a historical person and the central character's real name is used.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);
+
+<= nrel_inclusion: concept_humanities;;

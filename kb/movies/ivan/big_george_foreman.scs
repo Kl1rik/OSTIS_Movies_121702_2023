@@ -1,0 +1,49 @@
+big_george_foreman<- concept_biography;
+=> nrel_main_idtf:
+   [Big George Foreman]
+   (* <- lang_en;; <- name_en;;*);
+   [Джордж Форман: Несокрушимый]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Джордж Форман — легендарный боксёр-профессионал в тяжёлом весе. Проведя детство в бедности, Форман направил всю природную агрессию на достижение титулов золотого медалиста Олимпийских игр и чемпиона мира в тяжёлом весе. Спустя годы успешной карьеры, пережив околосмертный опыт, Форман променял боксёрский ринг на проповедничество и служение церкви. Но увидев нужду боксёрского общества в духовном и финансовом руководстве, Джордж Форман вернулся на ринг и снова творил историю, став старейшим чемпионом мира в тяжёлом весе и доказав, что в боксе возможно всё, несмотря на возраст.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Follow the remarkable life and times of Foreman, from Olympic Gold medalist to World Heavyweight champion, from the Rumble in the Jungle fight with Muhammad Ali in Zaire to finding his faith, retiring, and becoming a preacher. When financial hardship hits his family and church, he steps back into the ring and regains the championship at age 45, becoming the oldest heavyweight champion in boxing history.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H9M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H9M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [27.04.2023](*<-lang_ru;;*);;
+    => nrel_main_idtf : [27.04.2023](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

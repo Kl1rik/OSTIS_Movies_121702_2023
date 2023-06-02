@@ -1,0 +1,61 @@
+concept_color_cinema
+<-sc_node_not_relation;
+=>nrel_main_idtf:
+[цветное кино ]
+(* <- lang_ru;; *);
+[Color cinema]
+(* <- lang_en;; *);
+
+
+
+<-rrel_key_sc_element: ...
+(*
+	<-illustration;;
+	=>nrel_main_idtf:
+		[Рис. (Ка́мера-обску́ра)](*<-lang_ru;;*);
+		[Pic. (Camera obscura)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/color_cinema.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:
+[Опр. (цветное кино)]
+(* <- lang_ru;; *);
+[Def. (Color cinema)]
+(* <- lang_en;; *);;
+<- definition;;
+<= nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+[цветное кино - совокупность технологий кинематографа, позволяющая получать в кинофильмах изображение с натуральными цветами, соответствующими цветам снятых объектов или рисунков художников-мультипликаторов.
+ К цветному кино также принято относить колоризованные кинофильмы.
+ ]
+(* <- lang_ru;; *);;
+*);
+...
+(*
+-> rrel_example:
+[Color cinema is a set of cinematographic technologies that makes it possible to obtain images in films with natural colors that correspond to the colors of the filmed objects or drawings of animators.
+ Colored films are also commonly referred to as color films.
+]
+(* <- lang_en;; *);;
+*);;
+=>nrel_create_date:
+   [1935]
+   (* <- concept_calendar_date;;*);;
+
+=>nrel_end_date:
+   [наши дни]
+   (* <- concept_calendar_date;;*);;  
+<= nrel_using_constants:
+{
+concept_color_cinema
+};;
+*);
+<= nrel_inclusion: concept_movie_history;;

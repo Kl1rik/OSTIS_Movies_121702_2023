@@ -1,0 +1,50 @@
+kiss_of_death<- concept_thriller;
+=> nrel_main_idtf:
+   [Kiss of Death]
+   (* <- lang_en;; <- name_en;;*);
+   [Поцелуй смерти]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Джимми Килмартин вышел из тюрьмы и решил завязать с прошлым. Но не тут-то было, полицейские решили сделать его «стукачом» и внедрить в одну из банд Нью-Йорка. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Jimmy Kilmartin got out of prison and decided to tie up with the past. But it wasn’t there, the police decided to make him a “snitch” and introduce him into one of the New York gangs.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);       
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H41M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H41M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.04.1994](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.04.1994](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [UK]
+   (* <- concept_region;;*);;
+
+
+

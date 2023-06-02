@@ -1,0 +1,26 @@
+made_in_germany___die_dramatische_geschichte_des_hauses_zeiss <- concept_biography;
+
+=> nrel_main_idtf:
+	[made_in_germany___die_dramatische_geschichte_des_haenes_zeiss](*<-lang_en;;<-name_en;;*);
+	[jeder_wahlt_sein_schicksal_selbst](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT1H41M](*<-lang_ru;;*);
+       [PT1H41M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1957](*<-lang_ru;;*);
+       [1957](*<-lang_en;;*);;
+*);;

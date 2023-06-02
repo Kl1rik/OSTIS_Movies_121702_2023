@@ -1,0 +1,19 @@
+concept_biography<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[Биографический фильм](* <- lang_ru;; *);
+	[Biography](* <- lang_en;; *);
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (Автобиография)](*<-lang_ru;;*);
+		[Def. (Biography)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...(*
+		->[Биографические фильмы - это такой кинематографический жанр, который рассказывает своим зрителям реальные истории известных и знаменитых людей, чья деятельность каким-то образом сумела оставить след в мировой истории.]
+		(* <- lang_ru;; *);;
+		->[Biographical films are such a cinematic genre that tells its viewers the real stories of famous and famous people whose activities somehow managed to leave a mark on world history.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_genre;;

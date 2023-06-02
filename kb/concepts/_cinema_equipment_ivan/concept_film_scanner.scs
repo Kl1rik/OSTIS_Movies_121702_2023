@@ -1,0 +1,50 @@
+concept_film_scanner
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[сканер киноплёнки](*<-lang_ru;;*);
+[film scanner](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (сканер киноплёнки)](*<-lang_ru;;*);
+		[pic. (film scanner)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/film_scanner.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (сканер киноплёнки)](*<-lang_ru;;*);
+	[def. (film scanner)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Ска́нер киноплёнки — устройство для преобразования изображения на киноплёнке в цифровые видеофайлы высокого разрешения. Главное отличие от телекинопроектора — возможность получения вместо видеосигнала цифрового массива данных, пригодного для использования в кинопроизводстве по цифровой технологии Digital Intermediate. При сканировании может быть оцифрован как оригинальный негатив, так и фильмокопия или контратип.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		->rrel_example:
+		[A motion picture film scanner is a device used in digital filmmaking to scan original film for storage as high-resolution digital intermediate files.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_film_scanner
+	};;
+*);
+
+<= nrel_inclusion: concept_distribution_cinema_equipment;;

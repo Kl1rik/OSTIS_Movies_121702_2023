@@ -1,0 +1,26 @@
+the_guerrilla <- concept_war_movie;
+
+=> nrel_main_idtf:
+	[the_guerrilla](*<-lang_en;;<-name_en;;*);
+	[the_guerrilla](*<-lang_ru;;<-name_ru;;*);
+
+=> nrel_rating :...(*
+    <- concept_rating;;
+    => nrel_main_idtf:
+       [Rating PG-13](*<-lang_ru;;*);
+       [Rating PG-13](*<-lang_en;;*);;
+*);
+
+=> nrel_duration_of_showing :...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf:
+       [PT0H15M](*<-lang_ru;;*);
+       [PT0H15M](*<-lang_en;;*);;
+*);
+
+=> nrel_release_date :...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf:
+       [1908](*<-lang_ru;;*);
+       [1908](*<-lang_en;;*);;
+*);;

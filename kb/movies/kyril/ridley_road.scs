@@ -1,0 +1,50 @@
+ridley_road<- concept_thriller;
+=> nrel_main_idtf:
+   [Ridley Road]
+   (* <- lang_en;; <- name_en;;*);
+   [Ридли Роуд]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Убит архиепископ Рашмен, рядом с его трупом обнаружен испуганный подросток Аарон (Эдвард Нортон), вся одежда которого пропитана кровью священнослужителя. Защищать его в суде берется известный адвокат Мартин Вейл (Ричард Гир), который уверен, что спасёт юношу от смертной казни и, выиграв этот скандальный процесс, упрочит свою репутацию ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Archbishop Rushman is killed, a frightened teenager Aaron (Edward Norton) is found next to his corpse, all of whose clothes are soaked in the blood of a clergyman. The well-known lawyer Martin Weil (Richard Gere) is taken to defend him in court, who is sure that he will save the young man from the death penalty and, having won this scandalous process, will strengthen his reputation]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);           
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H48M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H48M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [15.05.2021](*<-lang_ru;;*);;
+    => nrel_main_idtf : [15.05.2021](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [UK]
+   (* <- concept_region;;*);;
+
+
+

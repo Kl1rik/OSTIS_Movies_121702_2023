@@ -1,0 +1,27 @@
+black_hawk<- concept_war_movie;
+=> nrel_main_idtf:
+   [Black Hawk]
+   (* <- lang_en;; <- name_en;;*);
+   [Чёрный ястреб]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating NR]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H40M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H40M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [01.03.2003](*<-lang_ru;;*);;
+    => nrel_main_idtf : [01.03.2003](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;

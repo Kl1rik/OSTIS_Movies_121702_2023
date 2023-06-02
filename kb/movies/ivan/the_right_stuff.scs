@@ -1,0 +1,51 @@
+the_right_stuff<- concept_biography;
+=> nrel_main_idtf:
+   [The Right Stuff]
+   (* <- lang_en;; <- name_en;;*);
+   [Парни что надо]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[
+www.lamoda.by
+Фрагментарная история американской астронавтики с 1947 по 1963 год, когда после долгих и трагических испытаний американцы, наконец, вышли в космос.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[The U.S. space program's development from the breaking of the sound barrier to selection of the Mercury 7 astronauts, from a group of test pilots with a more seat-of-the-pants approach than the program's more cautious engineers preferred.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_biography
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT3H13M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT3H13M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [21.10.1983](*<-lang_ru;;*);;
+    => nrel_main_idtf : [21.10.1983](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [United States]
+   (* <- concept_region;;*);;
+
+

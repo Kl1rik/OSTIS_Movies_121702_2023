@@ -1,0 +1,50 @@
+concept_optical_printer
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+[кинокопировальный аппарат](*<-lang_ru;;*);
+[optical printer](*<-lang_en;;*);
+
+<-rrel_key_sc_element:...(*
+	<-illustration;;
+	
+	=>nrel_main_idtf:
+		[рис. (кинокопировальный аппарат)](*<-lang_ru;;*);
+		[pic. (optical printer)](*<-lang_en;;*);;
+		
+	<=nrel_sc_text_translation:...
+	(*
+		->"file://IMG/optical_printer.jpg"(*=>nrel_format:format_jpg;;*);;
+	*);;
+*);
+
+<- rrel_key_sc_element:...(*
+	=>nrel_main_idtf:
+	[опр. (кинокопировальный аппарат)](*<-lang_ru;;*);
+	[def. (optical printer)](*<-lang_en;;*);;
+	
+	<- definition;;
+	
+	<= nrel_sc_text_translation:
+	...
+	(*
+		->rrel_example:
+		[Кинокопирова́льный аппара́т — устройство для получения с оригинального негатива фильма его позитивных копий на киноплёнке. В классической «оптической» технологии кинопроизводства кинокопировальный аппарат служит для печати прокатных фильмокопий, а также интерпозитивов, дубльнегативов и промежуточных контратипов при изготовлении титров и спецэффектов.]
+		(*<-lang_ru;;*);;
+	*);
+
+	...
+	(*
+		->rrel_example:
+		[An optical printer is a device consisting of one or more film projectors mechanically linked to a movie camera. It allows filmmakers to re-photograph one or more strips of film. The optical printer is used for making special effects for motion pictures, or for copying and restoring film material.]
+		(*<-lang_en;;*);;
+	*);;
+	
+	<= nrel_using_constants:
+	{
+	concept_optical_printer
+	};;
+*);
+
+<= nrel_inclusion: concept_production_cinema_equipment;;

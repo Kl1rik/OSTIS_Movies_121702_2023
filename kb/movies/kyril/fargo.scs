@@ -1,0 +1,50 @@
+fargo<- concept_biography;
+=> nrel_main_idtf:
+   [Fargo]
+   (* <- lang_en;; <- name_en;;*);
+   [Фарго]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating Pg-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Главный герой фильма — бывший боксёр и байкер, который становится священником. Он проходит путём саморазрушения, чтобы найти себя.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[The protagonist of the film is a former boxer and biker who becomes a priest. He goes through self-destruction to find himself.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H24M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H24M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [06.03.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [06.03.1996](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [Cuba]
+   (* <- concept_region;;*);;
+
+
+

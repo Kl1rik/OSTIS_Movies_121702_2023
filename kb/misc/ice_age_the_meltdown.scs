@@ -1,0 +1,30 @@
+ice_age_the_meltdown<- concept_comedy;
+=> nrel_main_idtf:
+   [Ice Age: The Meltdown]
+   (* <- lang_en;; <- name_en;;*);
+   [Ледниковый период: Глобальное потепление]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating E-10]
+   (* <- concept_rating;;*);
+   
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H31M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H31M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [19.03.2006](*<-lang_ru;;*);;
+    => nrel_main_idtf : [19.03.2006](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

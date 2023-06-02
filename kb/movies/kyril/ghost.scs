@@ -1,0 +1,50 @@
+ghost<- concept_melodrama;
+=> nrel_main_idtf:
+   [Ghost]
+   (* <- lang_en;; <- name_en;;*);
+   [Привидение]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating PG-13]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Призрак - это американский фильм 1990 года, жанра романтика/фэнтези, режиссёром которого был Джерри Цукер, а в главных ролях снимались Деми Мур, Патрик Суэйзи и Уипи Голдберг. Фильм рассказывает историю молодой пары, Сэма (Суэйзи) и Молли (Мур), которые глубоко любят друг друга. Когда Сэм погибает при нападении грабителей, он превращается в призрак и пытается связаться с Молли через Оду Мэй Браун (Голдберг), экстрасенса, которая является единственным человеком, который может его слышать.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[Ghost is a 1990 American romance/fantasy film directed by Jerry Zucker and starring Demi Moore, Patrick Swayze, and Whoopi Goldberg. The film tells the story of a young couple, Sam (Swayze) and Molly (Moore), who are deeply in love. When Sam is killed in a mugging, he becomes a ghost and tries to communicate with Molly through Oda Mae Brown (Goldberg), a psychic who is the only person who can hear him.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);      
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT2H07M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT2H07M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [13.07.1990](*<-lang_ru;;*);;
+    => nrel_main_idtf : [13.07.1990](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [USA]
+   (* <- concept_region;;*);;
+
+
+

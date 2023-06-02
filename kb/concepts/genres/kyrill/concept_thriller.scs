@@ -1,0 +1,19 @@
+concept_thriller<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[триллер](* <- lang_ru;; *);
+	[thriller](* <- lang_en;; *);
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (Триллер)](*<-lang_ru;;*);
+		[Def. (Thriller)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...(*
+		->[Триллер - остросюжетное захватывающее художественное произведение, вызывающее чувство страха, ужаса ]
+		(* <- lang_ru;; *);;
+		->[Thriller - an action-packed exciting work of art that evokes a feeling of fear, horror]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_genre;;

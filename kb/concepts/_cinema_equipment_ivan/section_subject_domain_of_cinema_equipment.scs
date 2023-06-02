@@ -1,0 +1,85 @@
+section_subject_domain_of_cinema_equipment
+
+
+=> nrel_main_idtf: 
+	[раздел. предметная область кинооборудования](* <-lang_ru;; *);
+	[section. subject domain of cinema equipment](* <-lang_en;; *);
+	
+<-atomic_section;;
+
+
+section_subject_domain_of_cinema_equipment = [*
+
+	subject_domain_of_cinema_equipment
+<- sc_node_struct;
+	
+	=> nrel_main_idtf: 
+		[предметная область кинооборудования](*<- lang_ru;;*);
+		[subject area of cinema equipment](*<- lang_en;;*);
+
+	<- subject_domain;	
+
+	-> rrel_key_sc_element:
+		concept_production_cinema_equipment;
+		concept_distribution_cinema_equipment;
+		concept_equipment;
+		concept_technology;;
+		
+		
+    subject_domain_of_production_cinema_equipment
+<- sc_node_struct;
+	
+	=> nrel_main_idtf: 
+		[предметная область оборудования для кинопроизводства](*<- lang_ru;;*);
+		[subject area of production cinema equipment](*<- lang_en;;*);
+
+	<- subject_domain;	
+
+	-> rrel_maximum_studied_object_class:
+        concept_production_cinema_equipment;
+
+	-> rrel_key_sc_element:
+		concept_movie_camera;
+		concept_digital_movie_camera;
+		concept_film_laboratory;
+		concept_flatbed_table;
+		concept_optical_printer;
+		concept_film_recorder;;
+		
+		
+    subject_domain_of_distribution_cinema_equipment
+<- sc_node_struct;
+
+	=> nrel_main_idtf: 
+		[предметная область оборудования для кинопроката](*<- lang_ru;;*);
+		[subject area of distribution cinema equipment](*<- lang_en;;*);
+
+	<- subject_domain;	
+
+    -> rrel_maximum_studied_object_class:
+        concept_distribution_cinema_equipment;
+
+	-> rrel_key_sc_element:
+		concept_movie_projector;
+		concept_digital_movie_projector;
+		concept_telecine;
+		concept_film_scanner;;
+*];;
+
+
+section_subject_domain_of_cinema_equipment	
+-> rrel_key_sc_element:
+	concept_production_cinema_equipment;
+	concept_distribution_cinema_equipment;
+	concept_equipment;
+	concept_technology;
+	concept_movie_camera;
+	concept_digital_movie_camera;
+	concept_film_laboratory;
+	concept_flatbed_table;
+	concept_optical_table;
+	concept_film_recorder;
+	concept_movie_projector;
+	concept_digital_movie_projector;
+	concept_telecine;
+	concept_film_scanner;;

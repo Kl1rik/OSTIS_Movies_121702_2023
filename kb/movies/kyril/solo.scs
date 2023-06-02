@@ -1,0 +1,50 @@
+solo<- concept_thriller;
+=> nrel_main_idtf:
+   [solo]
+   (* <- lang_en;; <- name_en;;*);
+   [cоло]
+   (* <- lang_ru;; <- name_ru;; <- name;;*);
+=> nrel_rating:
+   [Rating R]
+   (* <- concept_rating;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Музыкант симфонического оркестра, валторнист, которому вечером исполнять Пятую симфонию Чайковского на концерте в Ленинградской филармонии, который будет транслироваться по радио в Лондон, вспоминает, что у него дома могло остаться пшено, которым он до войны кормил на балконе птиц. ]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example: 
+			[The musician of the symphony orchestra, the horn player, who will perform Tchaikovsky's Fifth symphony in the evening at a concert in the Leningrad Philharmonic, which will be broadcast on the radio to London, recalls that he could have left millet at home, which he used to feed birds on the balcony before the war.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_thriller
+		};;
+	*);       
+=> nrel_duration_of_showing : ...(*
+    <- concept_time_showing;;
+    => nrel_main_idtf : [PT1H34M](*<-lang_ru;;*);;
+    => nrel_main_idtf : [PT1H34M](*<-lang_en;;*);;
+*);
+   
+=> nrel_release_date : ...(*
+    <- concept_calendar_date;;
+    => nrel_main_idtf : [23.08.1996](*<-lang_ru;;*);;
+    => nrel_main_idtf : [23.08.1996](*<-lang_en;;*);;
+*);
+
+
+
+=>nrel_region:
+   [UssR]
+   (* <- concept_region;;*);;
+
+
+

@@ -1,0 +1,19 @@
+concept_rating<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[возрастной рейтинг кинофильма](* <- lang_ru;; *);
+	[film rating](* <- lang_en;; *);
+<- rrel_key_sc_element:...(*
+	<- definition;;
+	=>nrel_main_idtf:
+		[Опр. (Возрастной рейтинг кинофильма)](* <- lang_ru;; *);
+		[Def. (Film rating)](* <- lang_en;; *);;
+	<= nrel_sc_text_translation:...(*
+		->[Возрастной рейтинг кинофильма - это система классификации фильмов по возрастным ограничениям, которая помогает определить, подходит ли фильм для просмотра детьми определенного возраста.]
+		(* <- lang_ru;; *);;
+		->[Film rating - classification system for movies that helps to determine if a movie is suitable for children of a certain age.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_movie;;

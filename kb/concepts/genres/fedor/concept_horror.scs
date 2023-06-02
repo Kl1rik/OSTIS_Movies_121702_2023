@@ -1,0 +1,19 @@
+concept_horror<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+	[хоррор](* <- lang_ru;; *);
+	[horror](* <- lang_en;; *);
+<-rrel_key_sc_element:...(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. (Хоррор)](*<-lang_ru;;*);
+		[Def. (Horror)](*<-lang_en;;*);;
+	<=nrel_sc_text_translation:...(*
+		->[Хоррор - жанр литературы, кино и других видов искусства, направленный на вызов ужаса, страха и тревоги у зрителя или читателя.]
+		(* <- lang_ru;; *);;
+		->[Horror - a genre of literature, film, and other forms of art that aims to evoke feelings of horror, fear, and unease in the audience or reader.]
+		(* <- lang_en;; *);;
+	*);;
+*);
+
+<-concept_genre;;
